@@ -1,0 +1,20 @@
+..
+   iteration-loops/toctree.rst
+
+
+   ..
+   beweging-samenvatting.rst
+   beweging-oefeningen.rst
+   kleuren-theorie.rst
+   kleuren-samenvatting.rst
+   kleuren-oefenopdrachten.rst
+   inleveropdrachten.rst
+
+
+
+
+
+   functions-organisation/toctree.rst
+   iteration-counters/toctree.rst
+   functions-parameters/toctree.rst
+   conditionals/toctree.rst

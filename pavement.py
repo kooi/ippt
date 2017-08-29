@@ -19,9 +19,11 @@ options(
     sphinx = Bunch(docroot=".",),
 
     build = Bunch(
-        builddir="./build/ippt",
+#        builddir="./build/ippt",
+        builddir="./docs",
         sourcedir="_sources",
-        outdir="./build/ippt",
+#        outdir="./build/ippt",
+        outdir="./docs",
         confdir=".",
         project_name = "ippt",
         template_args={'course_id': 'ippt',
