@@ -156,7 +156,7 @@ html_theme_options = {
     #
     # Note that this is served off CDN, so won't be available offline.
     #'bootswatch_theme': "slate",
-    'bootswatch_theme': "united",
+    #'bootswatch_theme': "united",
 }
 
 #html_style = "style.css"
