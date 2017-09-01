@@ -8,3 +8,4 @@ Inhoudsopgave
    :maxdepth: 3
 
    statements/toctree.rst
+   iteration/toctree.rst
