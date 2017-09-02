@@ -24,7 +24,6 @@ Als je een vierkant wilt gaan tekenen met zijden van 100 pixels, dan zou je het 
 
 Merk op dat de twee commando's ``forward(100)`` en ``right(90)`` vier keer worden herhaald! Zou het niet veel beter zijn als je de computer kort en krachtig kan aangeven dat hij die twee commando's vier keer moet uitvoeren, i.p.v. dat je de twee commando's vier keer moet gaan opschrijven? Dat kan! En hiervoor maak je gebruik van de herhaalinstructie (wordt ook een loop genoemd). Het bovenstaande programma kan dus ook als volgt worden geschreven:
 
-
 .. activecode:: vb-iteration-square2
    :caption: Een vierkant met zijde 100 *met herhaling*
    :nocodelens:

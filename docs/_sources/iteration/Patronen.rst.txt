@@ -44,6 +44,8 @@ Nu zien we dus dat het idee werkt en kunnen we, zoals in het onderstaande progra
    tina = turtle.Turtle()
    tina.shape("turtle")
 
+   tina.left(90)
+
    for i in range(5):
        tina.forward(50)  # patroon
        tina.backward(50) # patroon

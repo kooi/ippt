@@ -9,3 +9,5 @@ Inhoudsopgave
 
    statements/toctree.rst
    iteration/toctree.rst
+   functions/toctree.rst
+   parameters/toctree.rst

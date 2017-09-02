@@ -1,9 +1,7 @@
-Samenvatting(1)
-:::::::::::::::
+Samenvatting (2)
+::::::::::::::::
 
-.. code-block:: python
-
-   for i in range(<aantal>):
-       <code>
-
-herhaal de <code> <aantal> keer
+``penup()``
+  wandel-modus; turtle beweegt zonder te tekenen
+``pendown()``
+  schrijf-modus; turtle beweegt met tekenen
