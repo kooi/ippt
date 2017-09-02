@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="Dutch">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>2.1. Herhaling (iteration) &#8212; Introductie Programmeren met Python Turtle</title>
+    <title>2.2. Samenvatting(1) &#8212; Introductie Programmeren met Python Turtle</title>
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -97,7 +97,8 @@
     <link rel="shortcut icon" href="../_static/turtle_HrK_icon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Zoeken" href="../search.html" />
-    <link rel="prev" title="2. Statements" href="toctree.html" />
+    <link rel="next" title="2.3. Oefenopdrachten (1): Tekenen" href="Oefenopdrachten(1).html" />
+    <link rel="prev" title="2.1. Herhaling (iteration)" href="Herhaling(iteration).html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -247,7 +248,7 @@
             <li><a href='/runestone/static/overview/instructor.html'>Help for Instructors</a></li>
             <li class="divider"></li>
             <li><a href='http://runestoneinteractive.org'>About Runestone</a></li>
-            <li><a href='/runestone/default/reportabug?course=ippt&page=Herhaling(iteration)'>Report A Problem</a></li>
+            <li><a href='/runestone/default/reportabug?course=ippt&page=Samenvatting(1)'>Report A Problem</a></li>
           </ul>
         </li>
         <!-- end help menu dropdown -->
@@ -262,7 +263,7 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">2.1. Herhaling (iteration)</a></li>
+<li><a class="reference internal" href="#">2.2. Samenvatting(1)</a></li>
 </ul>
 </ul>
 </li>
@@ -270,14 +271,18 @@
         
         
           
-  <li id="relations-prev" title="Previous Chapter - 2. Statements" data-toggle="tooltip">
-    <a href="toctree.html" >
+  <li id="relations-prev" title="Previous Chapter - 2.1. Herhaling (iteration)" data-toggle="tooltip">
+    <a href="Herhaling(iteration).html" >
       <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
     </a>
   </li>
   
-    <li class="divider-vertical"></li>
-  
+  <li id="relations-next" title='Next Chapter - 2.3. Oefenopdrachten (1): Tekenen' data-toggle="tooltip" >
+    <a href="Oefenopdrachten(1).html" >
+      <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  <li class="divider-vertical"></li>
 
 <script type="text/javascript">
   opts = {'placement':'bottom',
@@ -303,54 +308,31 @@
 
 <div class="container" id="main-content">
   
-  <div class="section" id="herhaling-iteration">
-<h1>2.1. Herhaling (iteration)<a class="headerlink" href="#herhaling-iteration" title="Permalink naar deze titel">¶</a></h1>
-<p>Als je een vierkant wilt gaan tekenen met zijden van 100 pixels, dan zou je het volgende programma kunnen uitvoeren:</p>
-
-<div data-childcomponent="vb-iteration-square" class="runestone explainer ac_section alert alert-warning">
-
-<textarea data-component="activecode" id=vb-iteration-square data-lang="python"    data-timelimit=25000   data-audio=''     data-caption='Een vierkant met zijde 100'>
-import turtle
-tina = turtle.Turtle()
-tina.shape("turtle")
-
-tina.forward(100)
-tina.right(90)
-tina.forward(100)
-tina.right(90)
-tina.forward(100)
-tina.right(90)
-tina.forward(100)
-tina.right(90)
-</textarea>
+  <div class="section" id="samenvatting-1">
+<h1>2.2. Samenvatting(1)<a class="headerlink" href="#samenvatting-1" title="Permalink naar deze titel">¶</a></h1>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="o">&lt;</span><span class="n">aantal</span><span class="o">&gt;</span><span class="p">):</span>
+    <span class="o">&lt;</span><span class="n">code</span><span class="o">&gt;</span>
+</pre></div>
 </div>
-<p>Merk op dat de twee commando's <code class="docutils literal"><span class="pre">forward(100)</span></code> en <code class="docutils literal"><span class="pre">right(90)</span></code> vier keer worden herhaald! Zou het niet veel beter zijn als je de computer kort en krachtig kan aangeven dat hij die twee commando's vier keer moet uitvoeren, i.p.v. dat je de twee commando's vier keer moet gaan opschrijven? Dat kan! En hiervoor maak je gebruik van de herhaalinstructie (wordt ook een loop genoemd). Het bovenstaande programma kan dus ook als volgt worden geschreven:</p>
-
-<div data-childcomponent="vb-iteration-square2" class="runestone explainer ac_section alert alert-warning">
-
-<textarea data-component="activecode" id=vb-iteration-square2 data-lang="python"    data-timelimit=25000   data-audio=''     data-caption='Een vierkant met zijde 100 *met herhaling*'>
-import turtle
-tina = turtle.Turtle()
-tina.shape("turtle")
-
-for i in range(4):
-    tina.forward(100)
-    tina.right(90)
-</textarea>
-</div>
-<p>De for-opdracht zorgt ervoor dat de twee opdrachten eronder vier keer worden uitgevoerd. Als er <code class="docutils literal"><span class="pre">for</span> <span class="pre">i</span> <span class="pre">in</span> <span class="pre">range</span> <span class="pre">(14)</span></code> zou staan bijvoorbeeld, dan zouden die twee opdrachten 14 keer worden herhaald. Let wel op dat je eerst een <em>tab</em> plaatst voor de opdrachten die herhaald moeten worden. Dit noem je inspringen. Hetgeen dat herhaald moet worden, dient dus te worden ingesprongen. Als je dat niet doet, dan krijg je een foutmelding.</p>
+<p>herhaal de &lt;code&gt; &lt;aantal&gt; keer</p>
 </div>
 
 
   
       
-  <li id="relations-prev" class="navLink" title='Previous Section - 2. Statements' data-toggle="tooltip">
-    <a href="toctree.html" >
+  <li id="relations-prev" class="navLink" title='Previous Section - 2.1. Herhaling (iteration)' data-toggle="tooltip">
+    <a href="Herhaling(iteration).html" >
       <i class='prevNav glyphicon glyphicon-chevron-left'></i>
     </a>
   </li>
-  <a class="navLinkBg" id="navLinkBgLeft"  href="toctree.html" ></a>
+  <a class="navLinkBg" id="navLinkBgLeft"  href="Herhaling(iteration).html" ></a>
   
+  <li id="relations-next" class="navLink" title='Next Section - 2.3. Oefenopdrachten (1): Tekenen' data-toggle="tooltip" >
+    <a href="Oefenopdrachten(1).html" >
+      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right'></i>
+    </a>
+  </li>
+  <a class="navLinkBg navLink" id="navLinkBgRight" href="Oefenopdrachten(1).html" >Next Section - 2.3. Oefenopdrachten (1): Tekenen</a>
 
 <script type="text/javascript">
 
