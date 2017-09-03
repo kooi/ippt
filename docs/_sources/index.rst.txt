@@ -14,3 +14,4 @@ Inhoudsopgave
    counters/toctree.rst
    vars-io/toctree.rst
    conditionals/toctree.rst
+   interactivity/toctree.rst
