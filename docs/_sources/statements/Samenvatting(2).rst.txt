@@ -1,5 +1,5 @@
-Samenvatting(1)
-:::::::::::::::
+Samenvatting (2)
+::::::::::::::::
 
 ``pencolor(<kleur>)``
   verander de lijnkleur naar <kleur>. Gebruik hiervoor de Engelse naam voor de kleur tussen aanhalingstekens, bijvoorbeeld ``"red"``, ``"orange"``,  ``"green"``, ``"pink"`` of ``"yellow"``.

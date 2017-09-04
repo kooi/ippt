@@ -23,7 +23,7 @@ Python heeft de twee 'getallen' aan elkaar vastgeplakt. Dit doet hij, omdat hij 
 
 De input-functie is hier van belang. Die zegt eigenlijk altijd dat de invoer van de gebruiker als tekst moet worden beschouwd. Wij kunnen expliciet aangeven dat de invoer toch moet worden opgevat als een echt getal. Dit doen we door de functie ``int()`` te gebruiken. Dit ziet er als volgt uit:
 
-.. activecode:: vb-vars-io-rekenen1
+.. activecode:: vb-vars-io-rekenen2
    :caption: Een rekenmachine!
    :nocodelens:
    :language: python

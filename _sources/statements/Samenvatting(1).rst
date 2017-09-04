@@ -1,5 +1,5 @@
-Samenvatting(1)
-:::::::::::::::
+Samenvatting (1)
+::::::::::::::::
 
 ``forward(<afstand>)``
   beweeg de turtle <afstand> stappen naar voren

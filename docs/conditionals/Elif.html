@@ -153,7 +153,10 @@
       </button>
 
       <div>
+        <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="../index.html">&nbsp; </a>
+<!--
         <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
+-->
         <a class="navbar-brand" href="../index.html">Introductie Programmeren met Python Turtle</a>
       </div>
     </div>
@@ -331,31 +334,20 @@ else:
 <div data-childcomponent="vb-conditionals-gekoppelde-voorwaarde2" class="runestone explainer ac_section alert alert-warning">
 
 <textarea data-component="activecode" id=vb-conditionals-gekoppelde-voorwaarde2 data-lang="python"    data-timelimit=25000   data-audio=''     data-caption='Gekoppelde voorwaarde 2'>
-
-
+choice = input("Kies een letter (a,b,c)")
+if choice == "a":
+    print("je hebt gekozen voor a")
+elif choice == "b":
+    print("je hebt gekozen voor b")
+elif choice == "c":
+    print("je hebt gekozen voor c")
+else:
+          print ("Je hebt voor een andere letter gekozen")
 </textarea>
 </div>
-<p>choice = input(&quot;Kies een letter (a,b,c)&quot;)
-if choice == &quot;a&quot;:</p>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/home/cagedev/sync/git/ippt-runestone/_sources/conditionals/Elif.rst</tt>, line 35)</p>
-Unexpected indentation.</div>
-<blockquote>
-<div>print(&quot;je hebt gekozen voor a&quot;)</div></blockquote>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">/home/cagedev/sync/git/ippt-runestone/_sources/conditionals/Elif.rst</tt>, line 36)</p>
-Block quote ends without a blank line; unexpected unindent.</div>
-<dl class="docutils">
-<dt>elif choice == &quot;b&quot;:</dt>
-<dd>print(&quot;je hebt gekozen voor b&quot;)</dd>
-<dt>elif choice == &quot;c&quot;:</dt>
-<dd>print(&quot;je hebt gekozen voor c&quot;)</dd>
-<dt>else:</dt>
-<dd>print (&quot;Je hebt voor een andere letter gekozen&quot;)</dd>
-</dl>
-<p>Elke voorwaarde wordt op volgorde gecontroleerd. Is de eerste onwaar, dan wordt de volgende gecontroleerd, enzovoorts. Is er één waar dan wordt de bijbehorende tak uitgevoerd en de instructie eindigt. Zelfs als er meer dan één voorwaarde waar zou zijn. Alleen de tak bij de eerste keer waar wordt uitgevoerd.
-Dit alles wordt ook uitgelegd in het volgende filmpje: <a class="reference external" href="https://www.youtube.com/watch?v=2WYpO5yZBuA">https://www.youtube.com/watch?v=2WYpO5yZBuA</a> (en dit voorbeeld is gebruikt: <a class="reference external" href="https://trinket.io/python/30d3c020bd">https://trinket.io/python/30d3c020bd</a>)</p>
-</div>
+<p>Elke voorwaarde wordt op volgorde gecontroleerd. Is de eerste onwaar, dan wordt de volgende gecontroleerd, enzovoorts. Is er één waar dan wordt de bijbehorende tak uitgevoerd en de instructie eindigt. Zelfs als er meer dan één voorwaarde waar zou zijn. Alleen de tak bij de eerste keer waar wordt uitgevoerd.</p>
+<p>Dit alles wordt ook uitgelegd in het onderstaande filmpje</p>
+<iframe src="http://www.youtube.com/embed/2WYpO5yZBuA"     width="500" height="281" frameborder="0"     webkitAllowFullScreen mozallowfullscreen allowfullscreen     class="align-left" seamless ></iframe></div>
 
 
   

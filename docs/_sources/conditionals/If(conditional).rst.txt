@@ -4,6 +4,7 @@ if
 Vaak wil je een opdracht pas uitvoeren als is voldaan aan een bepaalde voorwaarde. Pas als de voorwaarde klopt, dan moet de opdracht uitgevoerd worden. Dit kun je realiseren door de ``if``-opdracht te gebruiken. Zie eens het volgende voorbeeld:
 
 .. code-block:: python
+
    if 3 < 4:
        print ("Hoi")
 
@@ -25,7 +26,7 @@ Zoals gezegd is ``3 < 4`` een wiskundige vergelijking waarmee je ongetwijfeld be
 
 Je kunt de ``if``-opdracht ook uitbreiden met een ``else``. Als de vergelijking na de ``if`` onwaar is, dan zal de ``else``-tak uitgevoerd worden. Zie maar eens het volgende programma:
 
-.. activecode:: vb-conditionals-if
+.. activecode:: vb-conditionals-if2
    :caption: doei
    :nocodelens:
    :language: python

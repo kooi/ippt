@@ -1,7 +1,9 @@
-Samenvatting (2)
+Samenvatting (1)
 ::::::::::::::::
 
-``penup()``
-  wandel-modus; turtle beweegt zonder te tekenen
-``pendown()``
-  schrijf-modus; turtle beweegt met tekenen
+.. code-block:: python
+
+   for i in range(<aantal>):
+       <code>
+
+herhaal de <code> <aantal> keer

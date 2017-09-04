@@ -152,7 +152,10 @@
       </button>
 
       <div>
+        <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="../index.html">&nbsp; </a>
+<!--
         <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
+-->
         <a class="navbar-brand" href="../index.html">Introductie Programmeren met Python Turtle</a>
       </div>
     </div>
@@ -263,9 +266,9 @@
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
 <li><a class="reference internal" href="#">8.4. Inleveropdrachten</a><ul>
-<li><a class="reference internal" href="#opg-conditionals-volwassen">8.4.1. opg-conditionals-volwassen</a></li>
-<li><a class="reference internal" href="#opg-conditionals-leeftijd">8.4.2. opg-conditionals-leeftijd</a></li>
-<li><a class="reference internal" href="#opg-conditionals-rekenmachine">8.4.3. opg-conditionals-rekenmachine</a></li>
+<li><a class="reference internal" href="#opg-interactivity-snackbar2">8.4.1. opg-interactivity-snackbar2</a></li>
+<li><a class="reference internal" href="#opg-interactivity-loopback">8.4.2. opg-interactivity-loopback</a></li>
+<li><a class="reference internal" href="#opg-interactivity-loopstop">8.4.3. opg-interactivity-loopstop</a></li>
 </ul>
 </li>
 </ul>
@@ -310,67 +313,65 @@
   
   <div class="section" id="inleveropdrachten">
 <h1>8.4. Inleveropdrachten<a class="headerlink" href="#inleveropdrachten" title="Permalink naar deze titel">¶</a></h1>
-<p>Opdracht 2
-Breid nu het bovenstaande programma uit. Als de gebruiker borek wil, dan krijgt hij een tweede vraag: Met gehakt of kaas? Afhankelijk van zijn keuze krijgt hij een bericht te zien. Zo kan het eruit zien:
-Welkom bij de digitale kantine :)
-Maak een keuze (lahmacun of borek) borek
-Met gehakt of kaas gehakt
-Alsjeblieft! Een borek met gehakt!</p>
-<p>Opdracht 3
-Kun je ook een loop maken die van 20 naar 0 aftelt in stapjes van 2? Het resultaat moet er als volgt uitzien:</p>
-<p>Dit is: 20
-Dit is: 18
-Dit is: 16
-Dit is: 14
-Dit is: 12
-Dit is: 10
-Dit is: 8
-Dit is: 6
-Dit is: 4
-Dit is: 2
-Dit is: 0
-EINDE</p>
-<p>Opdracht 4
-Maak een interactieve while loop waarin een gebruiker net zo lang woorden kan intypen, totdat hij het woordje stop ingeeft. Zodra hij dat doet, gaat het programma uit de loop en eindigt hij. Een verloop van het programma zou er als volgt uit kunnen zien:</p>
-<p>Voer een woord in: hoi
-Voer een woord in: doei
-Voer een woord in: informatica
-Voer een woord in: boe
-Voer een woord in: stop
-Je wilt stoppen? Dat kan! Je hebt in totaal 4 woorden ingevoerd! Tot de volgende keer!</p>
-<hr class="docutils" />
-<div class="section" id="opg-conditionals-volwassen">
-<h2>8.4.1. opg-conditionals-volwassen<a class="headerlink" href="#opg-conditionals-volwassen" title="Permalink naar deze titel">¶</a></h2>
-<p>Schrijf een programma dat de gebruiker vraagt hoe oud hij is. Als hij ouder is dan 18, dan zegt het programma: Gefeliciteerd, je bent volwassen!
-Het programma wordt altijd afgesloten met de melding: “Bedankt voor je deelname!”.</p>
+<div class="section" id="opg-interactivity-snackbar2">
+<h2>8.4.1. opg-interactivity-snackbar2<a class="headerlink" href="#opg-interactivity-snackbar2" title="Permalink naar deze titel">¶</a></h2>
+<p>Kijk weer naar je snackbar-programma. Breid deze nu uit. Als de gebruiker borek wil, dan krijgt hij een tweede vraag: &quot;Met gehakt of kaas?&quot; Afhankelijk van zijn keuze krijgt hij een bericht te zien. Zo kan het eruit zien:</p>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">Welkom</span> <span class="pre">bij</span> <span class="pre">de</span> <span class="pre">digitale</span> <span class="pre">kantine</span> <span class="pre">:)</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">Maak</span> <span class="pre">een</span> <span class="pre">keuze</span> <span class="pre">(lahmacun</span> <span class="pre">of</span> <span class="pre">borek)</span></code> <strong>borek</strong></div>
+<div class="line"><code class="docutils literal"><span class="pre">Met</span> <span class="pre">gehakt</span> <span class="pre">of</span> <span class="pre">kaas?</span></code> <strong>gehakt</strong></div>
+<div class="line"><code class="docutils literal"><span class="pre">Alsjeblieft!</span> <span class="pre">Een</span> <span class="pre">borek</span> <span class="pre">met</span> <span class="pre">gehakt!</span></code></div>
+</div>
 
-<div data-childcomponent="opg-conditionals-volwassen" class="runestone explainer ac_section alert alert-warning">
+<div data-childcomponent="opg-interactivity-snackbar2" class="runestone explainer ac_section alert alert-warning">
 
-<textarea data-component="activecode" id=opg-conditionals-volwassen data-lang="python"    data-timelimit=25000   data-audio=''     data-caption='Volwassen?'>
+<textarea data-component="activecode" id=opg-interactivity-snackbar2 data-lang="python"    data-timelimit=25000   data-audio=''     data-caption='Snackbar 2'>
 
 
 </textarea>
 </div>
 </div>
-<div class="section" id="opg-conditionals-leeftijd">
-<h2>8.4.2. opg-conditionals-leeftijd<a class="headerlink" href="#opg-conditionals-leeftijd" title="Permalink naar deze titel">¶</a></h2>
-<p>Schrijf een programma dat de gebruiker vraagt om het huidige jaar en om zijn geboortejaar. Als het geboortejaar voor het huidige jaar ligt, schrijf dan naar het scherm 'Je bent nog niet geboren.'. Schrijf anders naar het scherm hoe oud de gebruiker is (aan het eind van het jaar).</p>
+<div class="section" id="opg-interactivity-loopback">
+<h2>8.4.2. opg-interactivity-loopback<a class="headerlink" href="#opg-interactivity-loopback" title="Permalink naar deze titel">¶</a></h2>
+<p>Kun je ook een loop maken die van 20 naar 0 aftelt in stapjes van 2? Het resultaat moet er als volgt uitzien:</p>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">Dit</span> <span class="pre">is:</span> <span class="pre">20</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">Dit</span> <span class="pre">is:</span> <span class="pre">18</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">Dit</span> <span class="pre">is:</span> <span class="pre">16</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">Dit</span> <span class="pre">is:</span> <span class="pre">14</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">Dit</span> <span class="pre">is:</span> <span class="pre">12</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">Dit</span> <span class="pre">is:</span> <span class="pre">10</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">Dit</span> <span class="pre">is:</span> <span class="pre">8</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">Dit</span> <span class="pre">is:</span> <span class="pre">6</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">Dit</span> <span class="pre">is:</span> <span class="pre">4</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">Dit</span> <span class="pre">is:</span> <span class="pre">2</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">Dit</span> <span class="pre">is:</span> <span class="pre">0</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">EINDE</span></code></div>
+</div>
 
-<div data-childcomponent="opg-conditionals-leeftijd" class="runestone explainer ac_section alert alert-warning">
+<div data-childcomponent="opg-conditionals-loopback" class="runestone explainer ac_section alert alert-warning">
 
-<textarea data-component="activecode" id=opg-conditionals-leeftijd data-lang="python"    data-timelimit=25000   data-audio=''     data-caption='Leeftijd?'>
+<textarea data-component="activecode" id=opg-conditionals-loopback data-lang="python"    data-timelimit=25000   data-audio=''     data-caption='Loop-back'>
 
 
 </textarea>
 </div>
 </div>
-<div class="section" id="opg-conditionals-rekenmachine">
-<h2>8.4.3. opg-conditionals-rekenmachine<a class="headerlink" href="#opg-conditionals-rekenmachine" title="Permalink naar deze titel">¶</a></h2>
-<p>Schrijf een programma dat de gebruiker vraagt om twee gehele getallen. Vraag vervolgens of hij wil <code class="docutils literal"><span class="pre">+</span></code>, <code class="docutils literal"><span class="pre">-</span></code>, <code class="docutils literal"><span class="pre">*</span></code> of <code class="docutils literal"><span class="pre">/</span></code> moet doen. Voer daarna de gekozen bewerking op de getallen uit. Schrijf het antwoord naar het scherm.</p>
+<div class="section" id="opg-interactivity-loopstop">
+<h2>8.4.3. opg-interactivity-loopstop<a class="headerlink" href="#opg-interactivity-loopstop" title="Permalink naar deze titel">¶</a></h2>
+<p>Maak een interactieve <code class="docutils literal"><span class="pre">while</span></code>-loop waarin een gebruiker net zo lang woorden kan intypen, totdat hij het woordje &quot;stop&quot; ingeeft. Zodra hij dat doet, gaat het programma uit de loop en eindigt hij. Een verloop van het programma zou er als volgt uit kunnen zien:</p>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">Voer</span> <span class="pre">een</span> <span class="pre">woord</span> <span class="pre">in:</span></code> <strong>hoi</strong></div>
+<div class="line"><code class="docutils literal"><span class="pre">Voer</span> <span class="pre">een</span> <span class="pre">woord</span> <span class="pre">in:</span></code> <strong>doei</strong></div>
+<div class="line"><code class="docutils literal"><span class="pre">Voer</span> <span class="pre">een</span> <span class="pre">woord</span> <span class="pre">in:</span></code> <strong>informatica</strong></div>
+<div class="line"><code class="docutils literal"><span class="pre">Voer</span> <span class="pre">een</span> <span class="pre">woord</span> <span class="pre">in:</span></code> <strong>boe</strong></div>
+<div class="line"><code class="docutils literal"><span class="pre">Voer</span> <span class="pre">een</span> <span class="pre">woord</span> <span class="pre">in:</span></code> <strong>stop</strong></div>
+<div class="line"><code class="docutils literal"><span class="pre">Je</span> <span class="pre">wilt</span> <span class="pre">stoppen?</span> <span class="pre">Dat</span> <span class="pre">kan!</span> <span class="pre">Je</span> <span class="pre">hebt</span> <span class="pre">in</span> <span class="pre">totaal</span> <span class="pre">4</span> <span class="pre">woorden</span> <span class="pre">ingevoerd!</span> <span class="pre">Tot</span> <span class="pre">de</span> <span class="pre">volgende</span> <span class="pre">keer!</span></code></div>
+</div>
 
-<div data-childcomponent="opg-vars-rekenmachine" class="runestone explainer ac_section alert alert-warning">
+<div data-childcomponent="opg-conditionals-loopstop" class="runestone explainer ac_section alert alert-warning">
 
-<textarea data-component="activecode" id=opg-vars-rekenmachine data-lang="python"    data-timelimit=25000   data-audio=''     data-caption='Rekenmachine'>
+<textarea data-component="activecode" id=opg-conditionals-loopstop data-lang="python"    data-timelimit=25000   data-audio=''     data-caption='Loop-stop'>
 
 
 </textarea>

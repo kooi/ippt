@@ -26,16 +26,19 @@ Met de if-else opdracht kun je eigenlijk een onderscheid maken tussen twee versc
    :nocodelens:
    :language: python
 
-choice = input("Kies een letter (a,b,c)")
-if choice == "a":
-      print("je hebt gekozen voor a")
-elif choice == "b":
-      print("je hebt gekozen voor b")
-elif choice == "c":
-      print("je hebt gekozen voor c")
-else:
-	print ("Je hebt voor een andere letter gekozen")
+   choice = input("Kies een letter (a,b,c)")
+   if choice == "a":
+       print("je hebt gekozen voor a")
+   elif choice == "b":
+       print("je hebt gekozen voor b")
+   elif choice == "c":
+       print("je hebt gekozen voor c")
+   else:
+	     print ("Je hebt voor een andere letter gekozen")
 
 
 Elke voorwaarde wordt op volgorde gecontroleerd. Is de eerste onwaar, dan wordt de volgende gecontroleerd, enzovoorts. Is er één waar dan wordt de bijbehorende tak uitgevoerd en de instructie eindigt. Zelfs als er meer dan één voorwaarde waar zou zijn. Alleen de tak bij de eerste keer waar wordt uitgevoerd.
-Dit alles wordt ook uitgelegd in het volgende filmpje: https://www.youtube.com/watch?v=2WYpO5yZBuA (en dit voorbeeld is gebruikt: https://trinket.io/python/30d3c020bd)
+
+Dit alles wordt ook uitgelegd in het onderstaande filmpje
+
+.. youtube:: 2WYpO5yZBuA

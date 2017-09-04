@@ -22,7 +22,7 @@ Bij het testen van de code is het handiger om deze niet te testen met ``tekenspi
    tina.speed(10)
 
    def tekenspiraal(aantal):
-       tin.forward()
+       tina.forward()
 
    tekenspiraal(20)
 

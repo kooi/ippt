@@ -153,7 +153,10 @@
       </button>
 
       <div>
+        <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="../index.html">&nbsp; </a>
+<!--
         <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
+-->
         <a class="navbar-brand" href="../index.html">Introductie Programmeren met Python Turtle</a>
       </div>
     </div>
@@ -311,28 +314,39 @@
   <div class="section" id="vergelijkingsoperatoren">
 <h1>7.2. Vergelijkingsoperatoren<a class="headerlink" href="#vergelijkingsoperatoren" title="Permalink naar deze titel">¶</a></h1>
 <p>Naast de <code class="docutils literal"><span class="pre">&gt;</span></code> en <code class="docutils literal"><span class="pre">&lt;</span></code> heb je nog meer vergelijkingsoperatoren. Hieronder een tabel van alle vergelijkingsoperatoren en de bijbehorende betekenis:</p>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/home/cagedev/sync/git/ippt-runestone/_sources/conditionals/Vergelijkingsoperatoren.rst</tt>, line 11)</p>
-<p>Error in &quot;table&quot; directive:
-unknown option: &quot;widths&quot;.</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="o">..</span> <span class="n">table</span><span class="p">::</span>
-   <span class="p">:</span><span class="n">widths</span><span class="p">:</span> <span class="n">auto</span>
-
-   <span class="o">============</span>  <span class="o">=========</span>
-   <span class="n">Vergelijking</span>  <span class="n">Betekenis</span>
-   <span class="o">============</span>  <span class="o">=========</span>
-   <span class="n">x</span>  <span class="o">!=</span> <span class="n">y</span>       <span class="n">x</span> <span class="ow">is</span> <span class="n">niet</span> <span class="n">gelijk</span> <span class="n">aan</span> <span class="n">y</span>
-   <span class="n">x</span>  <span class="o">&gt;</span> <span class="n">y</span>        <span class="n">x</span> <span class="ow">is</span> <span class="n">groter</span> <span class="n">dan</span> <span class="n">y</span>
-   <span class="n">x</span>  <span class="o">&lt;</span> <span class="n">y</span>        <span class="n">x</span> <span class="ow">is</span> <span class="n">kleiner</span> <span class="n">dan</span> <span class="n">y</span>
-   <span class="n">x</span>  <span class="o">&gt;=</span> <span class="n">y</span>       <span class="n">x</span> <span class="ow">is</span> <span class="n">groter</span> <span class="n">dan</span> <span class="n">of</span> <span class="n">gelijk</span> <span class="n">aan</span> <span class="n">y</span>
-   <span class="n">x</span>  <span class="o">&lt;=</span> <span class="n">y</span>       <span class="n">x</span> <span class="ow">is</span> <span class="n">kleiner</span> <span class="n">dan</span> <span class="n">of</span> <span class="n">gelijk</span> <span class="n">aan</span> <span class="n">y</span>
-   <span class="n">x</span> <span class="o">==</span> <span class="n">y</span>        <span class="n">x</span> <span class="ow">is</span> <span class="n">gelijk</span> <span class="n">aan</span> <span class="n">y</span>
-
-</pre></div>
-</div>
-</div>
-<p>De bovenstaande uitleg over de <code class="docutils literal"><span class="pre">if</span></code>-else opdrachten wordt aan de hand van een voorbeeld ook uitgelegd in een video op youtube. Zie: <a class="reference external" href="https://www.youtube.com/watch?v=88qKFQOU40k">https://www.youtube.com/watch?v=88qKFQOU40k</a></p>
-</div>
+<table border="1" class="docutils">
+<colgroup>
+<col width="23%" />
+<col width="77%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Vergelijking</th>
+<th class="head">Betekenis</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">x</span> <span class="pre">!=</span> <span class="pre">y</span></code></td>
+<td><code class="docutils literal"><span class="pre">x</span></code> is niet gelijk aan <code class="docutils literal"><span class="pre">y</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">x</span>&#160; <span class="pre">&gt;</span> <span class="pre">y</span></code></td>
+<td><code class="docutils literal"><span class="pre">x</span></code> is groter dan <code class="docutils literal"><span class="pre">y</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">x</span>&#160; <span class="pre">&lt;</span> <span class="pre">y</span></code></td>
+<td><code class="docutils literal"><span class="pre">x</span></code> is kleiner dan <code class="docutils literal"><span class="pre">y</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">x</span> <span class="pre">&gt;=</span> <span class="pre">y</span></code></td>
+<td><code class="docutils literal"><span class="pre">x</span></code> is groter dan of gelijk aan <code class="docutils literal"><span class="pre">y</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">x</span> <span class="pre">&lt;=</span> <span class="pre">y</span></code></td>
+<td><code class="docutils literal"><span class="pre">x</span></code> is kleiner dan of gelijk aan <code class="docutils literal"><span class="pre">y</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">x</span> <span class="pre">==</span> <span class="pre">y</span></code></td>
+<td><code class="docutils literal"><span class="pre">x</span></code> is gelijk aan <code class="docutils literal"><span class="pre">y</span></code></td>
+</tr>
+</tbody>
+</table>
+<p>De bovenstaande uitleg over de <code class="docutils literal"><span class="pre">if</span></code>-else opdrachten wordt aan de hand van een voorbeeld ook uitgelegd in de volgende video:</p>
+<iframe src="http://www.youtube.com/embed/88qKFQOU40k"     width="500" height="281" frameborder="0"     webkitAllowFullScreen mozallowfullscreen allowfullscreen     class="align-left" seamless ></iframe></div>
 
 
   
