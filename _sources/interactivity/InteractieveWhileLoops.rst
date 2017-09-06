@@ -11,7 +11,8 @@ Hiervoor heb je geleerd hoe loops werken. Als je wilt dat iets tien keer wordt h
    for i in range(10):
        print ("Dit is herhaling " + str(i))
 
-In dit geval wordt de regel "Dit is herhaling" tien keer herhaald. En na de zin Dit is een herhaling volgt de inhoud van de loopcounter ``i``.
+
+In dit geval wordt de regel "Dit is herhaling" tien keer herhaald. En na de zin "Dit is een herhaling" volgt de inhoud van de loopcounter ``i``.
 
 Maar wat als je niet van te voren weet hoe vaak je iets wilt herhalen? Dan gebruik je een andere soort loop, de ``while``-loop.
 
@@ -28,7 +29,7 @@ Maar wat als je niet van te voren weet hoe vaak je iets wilt herhalen? Dan gebru
    print ("EINDE")
 
 
-Als je dit programma uitvoert, dan zal hij nooit stoppen. Hij zal continu vragen om een woord in te typen en zodra je een woord intypt geeft hij de lengte van het ingetypte woord (het commando ``len()`` geeft de lengte van een woord). Dit betekent dat het woordje EINDE nooit geprint zal worden. Daar kunnen we echter wel een verandering in aanbrengen. We kunnen namelijk dit zeggen: Als iemand het woordje quit intypt, dan stoppen we met de loop. Dit stoppen doen we met het commando ``break``.
+N.B. Als je dit programma uitvoert, dan zal hij nooit stoppen! (Om dit te stoppen moet je de pagina herladen. Dit kan met F5.) Hij zal continu vragen om een woord in te typen en zodra je een woord intypt geeft hij de lengte van het ingetypte woord (het commando ``len()`` geeft de lengte van een woord). Dit betekent dat het woordje "EINDE" nooit geprint zal worden. Daar kunnen we echter wel een verandering in aanbrengen. We kunnen namelijk dit zeggen: Als iemand het woordje "quit" intypt, dan stoppen we met de loop. Dit stoppen doen we met het commando ``break``.
 
 .. activecode:: vb-interactivity-while-loop-break
    :caption:
@@ -45,4 +46,4 @@ Als je dit programma uitvoert, dan zal hij nooit stoppen. Hij zal continu vragen
    print ("EINDE")
 
 
-Dit worden ook wel interactieve while loops genoemd. Het aantal keren dat de loop herhaalt is dan niet van te voren bepaald, maar hangt af van de invoer van de gebruiker!
+Dit worden ook wel interactieve ``while``-loops genoemd. Het aantal keren dat de loop herhaalt is dan niet van te voren bepaald, maar hangt af van de invoer van de gebruiker!

@@ -7,12 +7,17 @@ Oefenopdrachten (1)
 
 Maak een functie vierkant waarin je tussen de haakjes kan aangeven hoe groot het vierkant moet zijn. Je moet de functie dus als het volgt kunnen gebruiken:
 
-``vierkant(20)``
-``vierkant(50)``
-``vierkant(100)`` et cetera.
+.. code-block:: python
+
+   vierkant(20)
+   vierkant(50)
+   vierkant(100)
+
+et cetera.
+
 
 .. activecode:: oefen-parameters-vierkanten
-   :caption: vierkant()
+   :caption: ``vierkant()``
    :nocodelens:
    :language: python
 
@@ -23,8 +28,8 @@ Maak een functie vierkant waarin je tussen de haakjes kan aangeven hoe groot het
 
    def vierkant():
        for i in range(4):
-          tina.forward(50)
-          tina.right(90)
+           tina.forward(50)
+           tina.right(90)
 
    vierkant(20)
    vierkant(50)
@@ -39,7 +44,7 @@ Maak een functie ``driehoek()`` die driehoeken van verschillende lengtes kan tek
 .. image:: images/driehoeken.png
 
 .. activecode:: oefen-parameters-driehoeken
-   :caption: driehoek()
+   :caption: ``driehoek()``
    :nocodelens:
    :language: python
 

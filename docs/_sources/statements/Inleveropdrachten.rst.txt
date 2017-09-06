@@ -4,7 +4,7 @@ Inleveropdrachten
 opg-statements-trap
 -------------------
 
-Teken de onderstaande figuur. Dit kun je doen door uitsluitend gebruik te maken van turtle.forward() en turtle.right().
+Teken de onderstaande figuur. Dit kun je doen door uitsluitend gebruik te maken van ``forward()`` en ``right()``.
 
 .. image:: images/trap.png
 

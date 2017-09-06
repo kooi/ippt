@@ -3,7 +3,7 @@ Loopcounter
 
 Allereerst is het belangrijk om te weten dat we i.p.v. ``i`` ook een andere naam hadden kunnen kiezen. De meeste programmeurs gebruiken vaak een letter zoals ``j``, ``k``, ``x``, maar ook het woordje ``count``. De gouden is blijft "een gepaste naam dat overeenkomt met de bedoeling ervan".
 
-Deze ``i`` wordt ook wel de *loopcounter* of de teller genoemd. Tijdens het herhalen wordt hiermee bijgehouden bij welke herhaling de computer is! De eerste keer dat de loop herhaalt, is ``i`` gelijk aan het getal 0. De tweede keer wordt hij 1. De derde keer wordt hij 2 en de vierde keer wordt hij gelijk aan 3. En dan houdt de loop op. Wat kun je hier nu mee? Nou, een hele hoop! Laten we eerst een eenvoudig voorbeeld nemen. We gebruiken hier de functie ``dot(<grootte>)``, deze tekent een stip van de meegegeven <grootte> op de plek waar de turtle is.
+Deze ``i`` wordt ook wel de *loopcounter* of de teller genoemd. Tijdens het herhalen wordt hiermee bijgehouden bij welke herhaling de computer is! De eerste keer dat de loop herhaalt, is ``i`` gelijk aan het getal 0. De tweede keer wordt hij 1. De derde keer wordt hij 2 en de vierde keer wordt hij gelijk aan 3. En dan houdt de loop op. Wat kun je hier nu mee? Nou, een hele hoop! Laten we eerst een eenvoudig voorbeeld nemen. We gebruiken hier de functie ``dot(<grootte>)``, deze tekent een stip van de meegegeven ``<grootte>`` op de plek waar de turtle is.
 
 .. activecode:: vb-counters-stippen
    :caption: Een aantal stippen

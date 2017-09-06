@@ -1,7 +1,7 @@
 elif
 ::::
 
-Met de if-else opdracht kun je eigenlijk een onderscheid maken tussen twee verschillende mogelijkheden: of de if-voorwaarde is waar of hij is onwaar. Soms zijn er meer dan twee mogelijkheden en hebben we meer dan twee takken nodig. Een manier om een dergelijke berekening vorm te geven is een *gekoppelde voorwaarde*:
+Met de ``if``-``else`` opdracht kun je eigenlijk een onderscheid maken tussen twee verschillende mogelijkheden: of de ``if``-voorwaarde is waar of hij is onwaar. Soms zijn er meer dan twee mogelijkheden en hebben we meer dan twee takken nodig. Een manier om een dergelijke berekening vorm te geven is een *gekoppelde voorwaarde*:
 
 .. activecode:: vb-conditionals-gekoppelde-voorwaarde1
    :caption: Gekoppelde voorwaarde 1
@@ -42,3 +42,4 @@ Elke voorwaarde wordt op volgorde gecontroleerd. Is de eerste onwaar, dan wordt 
 Dit alles wordt ook uitgelegd in het onderstaande filmpje
 
 .. youtube:: 2WYpO5yZBuA
+   :http: https

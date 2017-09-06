@@ -43,8 +43,8 @@ Teken de onderstaande figuur. Maak eerst een functie ``rijhuizen()`` af die 5 hu
        tina.left(90)
 
        for i in range(4):
-          tina.forward(50)
-          tina.right(90)
+           tina.forward(50)
+           tina.right(90)
 
        tina.forward(50)
        tina.right(30)

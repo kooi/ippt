@@ -5,6 +5,7 @@ opg-vars-btw
 ------------
 
 De formule voor het berekenen van de prijs van een artikel is als volgt:
+
 Inclusief BTW = exclusief BTW * (1 + BTWtarief)
 
 Sercan koopt een jas voor €100 exclusief BTW. Maak een programma dat eerst berekent en vervolgens op het scherm toont wat de jas inclusief BTW kost.

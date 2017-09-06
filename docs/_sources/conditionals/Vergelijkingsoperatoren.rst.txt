@@ -21,3 +21,4 @@ Naast de ``>`` en ``<`` heb je nog meer vergelijkingsoperatoren. Hieronder een t
 De bovenstaande uitleg over de ``if``-else opdrachten wordt aan de hand van een voorbeeld ook uitgelegd in de volgende video:
 
 .. youtube:: 88qKFQOU40k
+   :http: https

@@ -17,8 +17,8 @@ Met het onderstaande programma zorg je ervoor dat de turtle een huis tekent.
    tina.left(90)
 
    for i in range(4):
-      tina.forward(50)
-      tina.right(90)
+       tina.forward(50)
+       tina.right(90)
 
    tina.forward(50)
    tina.right(30)
@@ -49,8 +49,8 @@ We gaan eerst een functie ``tekenhuis()`` maken:
        tina.left(90)
 
        for i in range(4):
-          tina.forward(50)
-          tina.right(90)
+           tina.forward(50)
+           tina.right(90)
 
        tina.forward(50)
        tina.right(30)
@@ -83,8 +83,8 @@ Probeer maar eens het programma uit.
        tina.left(90)
 
        for i in range(4):
-          tina.forward(50)
-          tina.right(90)
+           tina.forward(50)
+           tina.right(90)
 
        tina.forward(50)
        tina.right(30)

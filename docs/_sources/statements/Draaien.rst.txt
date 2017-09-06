@@ -18,7 +18,7 @@ Als je ``tina.right(90)`` ingeeft, dan draait tina 90 graden naar rechts.
 
 Als je dit verandert naar ``right(180)`` ingeeft, dan draait tina zich helemaal om. Je kunt zelfs meer dan 180 graden draaien. Voer maar eens ``right(270)`` in. En met ``right(360)`` draait tina een perfect rondje. Uiteindelijk verandert ze dus dan ook niet van richting.
 
-Als je naar rechts kan draaien, dan kun je uiteraard ook naar links draaien. Dat doe je met de functie turtle.left. Hieronder het resultaat van turtle.left(90)
+Als je naar rechts kan draaien, dan kun je uiteraard ook naar links draaien. Dat doe je met de functie ``left``.
 
 .. activecode:: vb-statements-turnleft
    :caption: Links afslaan

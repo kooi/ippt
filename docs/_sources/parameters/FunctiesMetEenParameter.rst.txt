@@ -4,7 +4,7 @@ Functies met een parameter
 Hieronder staan een tweetal functies, ``tekenhuis()`` en ``tekenhuis2()``. ``tekenhuis()`` is een functie waarmee je een klein huisje kan maken met zijden van 50 pixels ``tekenhuis2()`` een functie waarmee je een groter huisje kan maken met zijden van 75 pixels.
 
 .. activecode:: vb-parameters-tekenhuis2
-   :caption: tekenhuis() en tekenhuis2()
+   :caption: ``tekenhuis()`` en ``tekenhuis2()``
    :nocodelens:
    :language: python
 
@@ -17,8 +17,8 @@ Hieronder staan een tweetal functies, ``tekenhuis()`` en ``tekenhuis2()``. ``tek
        tina.left(90)
 
        for i in range(4):
-          tina.forward(50)
-          tina.right(90)
+           tina.forward(50)
+           tina.right(90)
 
        tina.forward(50)
        tina.right(30)
@@ -35,8 +35,8 @@ Hieronder staan een tweetal functies, ``tekenhuis()`` en ``tekenhuis2()``. ``tek
        tina.left(90)
 
        for i in range(4):
-          tina.forward(75)
-          tina.right(90)
+           tina.forward(75)
+           tina.right(90)
 
        tina.forward(75)
        tina.right(30)
@@ -69,8 +69,8 @@ In de ``def`` zetten we eerst het woordje *lengte* tussen de haakjes (je mag ook
        tina.left(90)
 
        for i in range(4):
-          tina.forward(50)
-          tina.right(90)
+           tina.forward(50)
+           tina.right(90)
 
        tina.forward(50)
        tina.right(30)
@@ -94,8 +94,8 @@ Vervolgens vervangen we het getal dat we tussen forward hebben gezet door het wo
        tina.left(90)
 
        for i in range(4):
-          tina.forward(lengte)
-          tina.right(90)
+           tina.forward(lengte)
+           tina.right(90)
 
        tina.forward(lengte)
        tina.right(30)
@@ -117,7 +117,7 @@ Wat er nu gebeurt:
 Als je ``tekenhuis(100)`` opgeeft, dan wordt het woordje lengte gelijkgemaakt aan het getal 100. Overal waar lengte staat is dan eigenlijk 100.
 
 .. activecode:: vb-parameters-tekenhuisparameter
-   :caption: tekenhuis(lengte)
+   :caption: ``tekenhuis(lengte)``
    :nocodelens:
    :language: python
 
@@ -130,8 +130,8 @@ Als je ``tekenhuis(100)`` opgeeft, dan wordt het woordje lengte gelijkgemaakt aa
        tina.left(90)
 
        for i in range(4):
-          tina.forward(lengte)
-          tina.right(90)
+           tina.forward(lengte)
+           tina.right(90)
 
        tina.forward(lengte)
        tina.right(30)

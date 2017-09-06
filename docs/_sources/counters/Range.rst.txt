@@ -14,7 +14,7 @@ Range is eigenlijk een functie die een *lijst* van getallen maakt. Zo maakt ``ra
 Uitleg: ``range`` heeft dus in dit geval drie parameters. De eerste bevat de *beginwaarde*. We willen dus niet meer dat de lijst begint met 0 maar met 10. De tweede bevat de *eindwaarde*. De lijst wordt dus gevuld tot het getal 30 (*niet tot en met!!*). En als derde parameter geef je de stapgrootte mee. Die is standaard 1, maar nu hebben we hem ingesteld met 5.
 
 .. activecode:: vb-counters-range
-   :caption: range(*beginwaarde*, *eindwaarde*, *stapgrootte*)
+   :caption: range(<beginwaarde>, <eindwaarde>, <stapgrootte>)
    :nocodelens:
    :language: python
 

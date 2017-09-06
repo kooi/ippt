@@ -5,7 +5,7 @@ Oefenopdrachten (1)
 1. 5x tekenhuis()
 -----------------
 
-Teken m.b.v. de functie tekenhuis() en een loop vijf huizen naast elkaar. Zorg er wel voor dat deze op het scherm passen.
+Teken m.b.v. de functie ``tekenhuis()`` en een loop vijf huizen naast elkaar. Zorg er wel voor dat deze op het scherm passen.
 
 .. activecode:: oefen-functions-tekenhuis5
    :caption: 5x tekenen met tekenhuis()
@@ -20,8 +20,8 @@ Teken m.b.v. de functie tekenhuis() en een loop vijf huizen naast elkaar. Zorg e
        tina.left(90)
 
        for i in range(4):
-          tina.forward(50)
-          tina.right(90)
+           tina.forward(50)
+           tina.right(90)
 
        tina.forward(50)
        tina.right(30)

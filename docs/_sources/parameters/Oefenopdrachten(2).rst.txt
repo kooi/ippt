@@ -21,8 +21,8 @@ Breid de tekenhuis functie uit met een extra parameter waarmee je, naast de leng
        tina.left(90)
 
        for i in range(4):
-          tina.forward(lengte)
-          tina.right(90)
+           tina.forward(lengte)
+           tina.right(90)
 
        tina.forward(lengte)
        tina.right(30)
@@ -43,9 +43,11 @@ Breid de tekenhuis functie uit met een extra parameter waarmee je, naast de leng
 
 Maak nu een functie genaamd rechthoek die twee parameters meekrijgt: *lengte* en *breedte*. Roep ten slotte de functie als volgt aan:
 
-``rechthoek(10,20)``
+.. code-block:: python
 
-``rechthoek(1,10)``
+   rechthoek(10,20)
+   rechthoek(1,10)
+
 
 .. activecode:: oefen-functions-rechthoek
    :caption: tekenhuis(lengte, kleur)
