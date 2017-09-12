@@ -38,8 +38,3 @@ Met de ``if``-``else`` opdracht kun je eigenlijk een onderscheid maken tussen tw
 
 
 Elke voorwaarde wordt op volgorde gecontroleerd. Is de eerste onwaar, dan wordt de volgende gecontroleerd, enzovoorts. Is er één waar dan wordt de bijbehorende tak uitgevoerd en de instructie eindigt. Zelfs als er meer dan één voorwaarde waar zou zijn. Alleen de tak bij de eerste keer waar wordt uitgevoerd.
-
-Dit alles wordt ook uitgelegd in het onderstaande filmpje
-
-.. youtube:: 2WYpO5yZBuA
-   :http: https

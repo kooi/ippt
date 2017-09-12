@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+
+<!--
+<button type="button" id="btnOpen">Open...</button>
+<button type="button" id="btnSave">Save</button>
+<textarea id="exampleTextarea" rows="8"></textarea>
+<input type="file" id="exampleInputFile" accept=".txt,.csv,.xml">
+-->
+
+    <div data-childcomponent="vb-statements-codeturtleinstance" class="runestone explainer ac_section alert alert-warning">
+      <textarea data-component="activecode" id=vb-statements-codeturtleinstance data-lang="python"    data-timelimit=25000   data-audio=''     data-caption='Een turtle genaamd Tina'>
+import turtle
+tina = turtle.Turtle()
+tina.shape("turtle")
+      </textarea>
+    </div>
+
+</body>
+<script>
+$(document).ready(function () {
+
+  $('textarea[data-component="activecode"]').each( function(i) {
+    console.log( $(this).attr('id') );
+  } );
+
+  $('textarea[data-component="activecode"]').after( function() {
+    $(this).append(  );
+  } );
+
+}); //end of $(document).ready(function () {
+</script>
+</html>
