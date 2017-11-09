@@ -137,50 +137,6 @@ ActiveCode.prototype.createEditor = function (index) {
     }
 };
 
-// hackjob
-ActiveCode.prototype.saveFile = function (fn) {
-  var fnb = this.divid;
-  console.log( fnb );
-  var d = new Date();
-  var fileName = fnb + '_' + d.toJSON().substring(0,10).split('-').join('')+'.py';
-  var code = this.editor.getValue();
-  console.log( 'Saving as file: '+fileName+'\n'+code );
-
-  if ('Blob' in window) {
-//    var fileName = prompt('Please enter file name to save', 'Untitled.txt');
-//    if (fileName) {
-//      var textToWrite = document.getElementById('exampleTextarea').value.replace(/\n/g, '\r\n');
-      var textToWrite = code.replace(/\n/g, '\r\n');
-      var textFileAsBlob = new Blob([textToWrite], { type: 'text/plain' });
-
-      if ('msSaveOrOpenBlob' in navigator) {
-        navigator.msSaveOrOpenBlob(textFileAsBlob, fileName);
-      } else {
-        var downloadLink = document.createElement('a');
-        downloadLink.download = fileName;
-        downloadLink.innerHTML = 'Download File';
-        if ('URL' in window) {
-          // Chrome allows the link to be clicked without actually adding it to the DOM.
-          // downloadLink.href = window.webkitURL.createObjectURL(textFileAsBlob);
-          downloadLink.href = window.URL.createObjectURL(textFileAsBlob);
-        } else {
-          // Firefox requires the link to be added to the DOM before it can be clicked.
-          downloadLink.href = window.URL.createObjectURL(textFileAsBlob);
-          downloadLink.onclick = destroyClickedElement;
-          downloadLink.style.display = 'none';
-          document.body.appendChild(downloadLink);
-        }
-
-        downloadLink.click();
-      }
-//    }
-  } else {
-    alert('Your browser does not support the HTML5 Blob.');
-  }
-
-}
-// end hackjob
-
 ActiveCode.prototype.createControls = function () {
     var ctrlDiv = document.createElement("div");
     $(ctrlDiv).addClass("ac_actions");
@@ -193,21 +149,7 @@ ActiveCode.prototype.createControls = function () {
     this.runButton = butt;
     $(butt).click(this.runProg.bind(this));
     $(butt).attr("type","button")
-
-    // Save
-    var butt = document.createElement("button");
-    $(butt).text("Save");
-    $(butt).addClass("btn save-button");
-    ctrlDiv.appendChild(butt);
-    this.saveButton = butt;
-    $(butt).click(this.saveFile.bind(this, 'filename.txt')); // ->saveFile
-    //$(butt).click(this.runProg.bind(this)); // ->saveFile
-    //$(butt).click( function() {
-    //  console.log( $(this) );
-    //} ); // ->saveFile
-    $(butt).attr("type","button")
-    // end savebutton geberation
-
+    
     if (! this.hidecode) {
         var butt = document.createElement("button");
         $(butt).text("Load History");
@@ -838,10 +780,6 @@ ActiveCode.prototype.manage_scrubber = function (scrubber_dfd, history_dfd, save
 
 
 ActiveCode.prototype.runProg = function () {
-  //
-    console.log( this.editor.getValue() );
-  //
-
     var prog = this.buildProg();
     var saveCode = "True";
     var scrubber_dfd, history_dfd, skulpt_run_dfd;
