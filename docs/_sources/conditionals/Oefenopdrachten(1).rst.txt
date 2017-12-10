@@ -10,3 +10,4 @@ Schrijf een programma dat de gebruiker om een getal vraagt. Als het getal groter
    :caption: Groter dan 10?
    :nocodelens:
    :language: python
+   :enabledownload:

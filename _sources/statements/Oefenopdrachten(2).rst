@@ -13,6 +13,7 @@ Hieronder staan een aantal beginnetjes code en een voorbeeldfiguur. Pas de code 
    :caption: Gekleurde driehoek
    :nocodelens:
    :language: python
+   :enabledownload:
 
    import turtle
    tina = turtle.Turtle()
@@ -33,6 +34,7 @@ Hieronder staan een aantal beginnetjes code en een voorbeeldfiguur. Pas de code 
    :caption: Gekleurd parallelogram
    :nocodelens:
    :language: python
+   :enabledownload:
 
    import turtle
    tina = turtle.Turtle()
@@ -53,6 +55,7 @@ Hieronder staan een aantal beginnetjes code en een voorbeeldfiguur. Pas de code 
    :caption: Gekleurde ruit
    :nocodelens:
    :language: python
+   :enabledownload:
 
    import turtle
    tina = turtle.Turtle()
@@ -74,6 +77,7 @@ Hieronder staan een aantal beginnetjes code en een voorbeeldfiguur. Pas de code 
    :caption: Gekleurd hexagon
    :nocodelens:
    :language: python
+   :enabledownload:
 
    import turtle
    tina = turtle.Turtle()

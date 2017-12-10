@@ -15,6 +15,7 @@ Teken de onderstaande trap met zo min mogelijk regels code.
    :caption: Trap
    :nocodelens:
    :language: python
+   :enabledownload:
 
    import turtle
    tina = turtle.Turtle()

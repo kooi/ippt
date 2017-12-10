@@ -11,6 +11,7 @@ Het programma wordt altijd afgesloten met de melding: “Bedankt voor je deelnam
    :caption: Volwassen?
    :nocodelens:
    :language: python
+   :enabledownload:
 
 
 opg-conditionals-leeftijd
@@ -22,6 +23,7 @@ Schrijf een programma dat de gebruiker vraagt om het huidige jaar en om zijn geb
    :caption: Leeftijd?
    :nocodelens:
    :language: python
+   :enabledownload:
 
 
 opg-conditionals-rekenmachine
@@ -33,3 +35,4 @@ Schrijf een programma dat de gebruiker vraagt om twee gehele getallen. Vraag ver
    :caption: Rekenmachine
    :nocodelens:
    :language: python
+   :enabledownload:

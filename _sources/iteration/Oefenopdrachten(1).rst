@@ -13,6 +13,7 @@ Voer het onderstaande programma uit en bekijk het resultaat. Kun jij het program
    :caption: Inkorten
    :nocodelens:
    :language: python
+   :enabledownload:
 
    import turtle
    tina = turtle.Turtle()
@@ -41,6 +42,7 @@ Gebruik een loop om een vierkant te tekenen waarvan de zijden 200 pixels lang zi
    :caption: Vierkant
    :nocodelens:
    :language: python
+   :enabledownload:
 
    import turtle
    tina = turtle.Turtle()

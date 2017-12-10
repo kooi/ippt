@@ -15,6 +15,7 @@ Bij het testen van de code is het handiger om deze niet te testen met ``tekenspi
    :caption: Een hele lange spiraal
    :nocodelens:
    :language: python
+   :enabledownload:
 
    import turtle
    tina = turtle.Turtle()
@@ -39,6 +40,7 @@ Maak vervolgens gebruik van de functie ``rndcol()`` om een elk vierkant een will
    :caption: 10 vierkanten
    :nocodelens:
    :language: python
+   :enabledownload:
 
    import random
    import turtle
@@ -61,6 +63,7 @@ Maak nu een programma waarmee je de volgende spiraal kan maken. Het eerste stree
    :caption: Spiraal2
    :nocodelens:
    :language: python
+   :enabledownload:
 
    import turtle
    tina = turtle.Turtle()
@@ -79,6 +82,7 @@ Maak nu het volgende figuur na. Belangrijk om te weten: Je begint met een drieho
    :caption: Polygon
    :nocodelens:
    :language: python
+   :enabledownload:
 
    import turtle
    tina = turtle.Turtle()

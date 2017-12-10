@@ -12,6 +12,7 @@ Schrijf een programma dat de gebruiker vraagt om een zelfstandig naamwoord (bv. 
    :caption: Vierkant
    :nocodelens:
    :language: python
+   :enabledownload:
 
 
 2. Alle volgordes
@@ -23,3 +24,4 @@ Schrijf een programma dat om drie woorden vraagt en vervolgens die drie woorden 
    :caption: Vierkant
    :nocodelens:
    :language: python
+   :enabledownload:

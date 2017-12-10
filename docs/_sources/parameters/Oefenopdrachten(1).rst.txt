@@ -20,6 +20,7 @@ et cetera.
    :caption: ``vierkant()``
    :nocodelens:
    :language: python
+   :enabledownload:
 
    import turtle
    tina = turtle.Turtle()
@@ -47,6 +48,7 @@ Maak een functie ``driehoek()`` die driehoeken van verschillende lengtes kan tek
    :caption: ``driehoek()``
    :nocodelens:
    :language: python
+   :enabledownload:
 
    import turtle
    tina = turtle.Turtle()

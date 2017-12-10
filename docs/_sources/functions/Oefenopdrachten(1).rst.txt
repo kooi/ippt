@@ -11,6 +11,7 @@ Teken m.b.v. de functie ``tekenhuis()`` en een loop vijf huizen naast elkaar. Zo
    :caption: 5x tekenen met tekenhuis()
    :nocodelens:
    :language: python
+   :enabledownload:
 
    import turtle
    tina = turtle.Turtle()
@@ -47,6 +48,7 @@ Teken het onderstaande plaatje na. Maak gebruik van de onderstaande code.
    :caption: 3x een ster tekenen
    :nocodelens:
    :language: python
+   :enabledownload:
 
    import turtle
    tina = turtle.Turtle()

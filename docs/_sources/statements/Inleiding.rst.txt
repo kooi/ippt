@@ -7,6 +7,7 @@ Wij gaan leren tekenen met Python Turtle. Om hiermee te werken zullen we eerst e
    :caption: Een turtle genaamd Tina
    :nocodelens:
    :language: python
+   :enabledownload:
 
    import turtle
    tina = turtle.Turtle()

@@ -15,6 +15,7 @@ Kijk weer naar je snackbar-programma. Breid deze nu uit. Als de gebruiker borek 
    :caption: Snackbar 2
    :nocodelens:
    :language: python
+   :enabledownload:
 
 
 opg-interactivity-loopback
@@ -39,6 +40,7 @@ Kun je ook een loop maken die van 20 naar 0 aftelt in stapjes van 2? Het resulta
    :caption: Loop-back
    :nocodelens:
    :language: python
+   :enabledownload:
 
 
 opg-interactivity-loopstop
@@ -57,3 +59,4 @@ Maak een interactieve ``while``-loop waarin een gebruiker net zo lang woorden ka
    :caption: Loop-stop
    :nocodelens:
    :language: python
+   :enabledownload:

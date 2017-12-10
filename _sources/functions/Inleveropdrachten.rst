@@ -12,6 +12,7 @@ Maak drie functies. Een functie genaamd ``vierkant100()`` die een vierkant met z
    :caption: Vierkantfuncties
    :nocodelens:
    :language: python
+   :enabledownload:
 
    import turtle
    tina = turtle.Turtle()
@@ -33,6 +34,7 @@ Teken de onderstaande figuur. Maak eerst een functie ``rijhuizen()`` af die 5 hu
    :caption: Nog meer huizen
    :nocodelens:
    :language: python
+   :enabledownload:
 
    import turtle
    tina = turtle.Turtle()
@@ -73,6 +75,7 @@ Teken de onderstaande figuur na. Maak gebruik van de functie ``maakvierhoek()``.
    :caption: Regenboogvierkanten
    :nocodelens:
    :language: python
+   :enabledownload:
 
    import turtle
    tina = turtle.Turtle()

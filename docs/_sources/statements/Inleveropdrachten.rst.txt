@@ -12,6 +12,7 @@ Teken de onderstaande figuur. Dit kun je doen door uitsluitend gebruik te maken 
    :caption: Trap
    :nocodelens:
    :language: python
+   :enabledownload:
 
    import turtle
    tina = turtle.Turtle()
@@ -32,6 +33,7 @@ Teken de onderstaande figuur.
    :caption: Balans
    :nocodelens:
    :language: python
+   :enabledownload:
 
    import turtle
    tina = turtle.Turtle()
@@ -49,6 +51,7 @@ Teken nu een huis met de turtle. Je mag de grootte en de kleur zelf bepalen, ond
    :caption: Balans
    :nocodelens:
    :language: python
+   :enabledownload:
 
    import turtle
    tina = turtle.Turtle()

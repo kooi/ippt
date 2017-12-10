@@ -10,3 +10,4 @@ Schrijf een programma waarmee je twee variabelen instelt met een beginwaarde. De
    :caption: Vierkant
    :nocodelens:
    :language: python
+   :enabledownload:

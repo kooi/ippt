@@ -15,6 +15,7 @@ Schrijf een programma die de onderstaande tekening maakt.
    :caption: Trap
    :nocodelens:
    :language: python
+   :enabledownload:
 
    import turtle
    tina = turtle.Turtle()

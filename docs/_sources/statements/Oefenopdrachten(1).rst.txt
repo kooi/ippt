@@ -13,6 +13,7 @@ Hieronder staan een aantal beginnetjes code en een voorbeeldfiguur. Pas de code 
    :caption: Vierkant
    :nocodelens:
    :language: python
+   :enabledownload:
 
    import turtle
    tina = turtle.Turtle()
@@ -31,6 +32,7 @@ Hieronder staan een aantal beginnetjes code en een voorbeeldfiguur. Pas de code 
    :caption: Zigzag
    :nocodelens:
    :language: python
+   :enabledownload:
 
    import turtle
    tina = turtle.Turtle()
@@ -49,6 +51,7 @@ Hieronder staan een aantal beginnetjes code en een voorbeeldfiguur. Pas de code 
    :caption: Slangetje
    :nocodelens:
    :language: python
+   :enabledownload:
 
    import turtle
    tina = turtle.Turtle()
@@ -66,6 +69,7 @@ Hieronder staan een aantal beginnetjes code en een voorbeeldfiguur. Pas de code 
    :caption: Zigzag
    :nocodelens:
    :language: python
+   :enabledownload:
 
    import turtle
    tina = turtle.Turtle()

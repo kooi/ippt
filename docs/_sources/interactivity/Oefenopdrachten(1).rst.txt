@@ -15,3 +15,4 @@ Schrijf een programma dat de gebruiker vraagt of hij een lahmacun wil of een bor
    :caption:
    :nocodelens:
    :language: python
+   :enabledownload:

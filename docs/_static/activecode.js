@@ -32,7 +32,11 @@ ActiveCode.prototype.init = function(opts) {
     this.timelimit = $(orig).data('timelimit');
     this.includes = $(orig).data('include');
     this.hidecode = $(orig).data('hidecode');
+    console.log(":hidecode: " + $(orig).data('hidecode'));
     this.runButton = null;
+    this.enabledownload = $(orig).data('enabledownload');
+    console.log(":enabledownload: " + $(orig).data('enabledownload'));
+    this.downloadButton = null;
     this.saveButton = null;
     this.loadButton = null;
     this.outerDiv = null;
@@ -137,50 +141,6 @@ ActiveCode.prototype.createEditor = function (index) {
     }
 };
 
-// hackjob
-ActiveCode.prototype.saveFile = function (fn) {
-  var fnb = this.divid;
-  console.log( fnb );
-  var d = new Date();
-  var fileName = fnb + '_' + d.toJSON().substring(0,10).split('-').join('')+'.py';
-  var code = this.editor.getValue();
-  console.log( 'Saving as file: '+fileName+'\n'+code );
-
-  if ('Blob' in window) {
-//    var fileName = prompt('Please enter file name to save', 'Untitled.txt');
-//    if (fileName) {
-//      var textToWrite = document.getElementById('exampleTextarea').value.replace(/\n/g, '\r\n');
-      var textToWrite = code.replace(/\n/g, '\r\n');
-      var textFileAsBlob = new Blob([textToWrite], { type: 'text/plain' });
-
-      if ('msSaveOrOpenBlob' in navigator) {
-        navigator.msSaveOrOpenBlob(textFileAsBlob, fileName);
-      } else {
-        var downloadLink = document.createElement('a');
-        downloadLink.download = fileName;
-        downloadLink.innerHTML = 'Download File';
-        if ('URL' in window) {
-          // Chrome allows the link to be clicked without actually adding it to the DOM.
-          // downloadLink.href = window.webkitURL.createObjectURL(textFileAsBlob);
-          downloadLink.href = window.URL.createObjectURL(textFileAsBlob);
-        } else {
-          // Firefox requires the link to be added to the DOM before it can be clicked.
-          downloadLink.href = window.URL.createObjectURL(textFileAsBlob);
-          downloadLink.onclick = destroyClickedElement;
-          downloadLink.style.display = 'none';
-          document.body.appendChild(downloadLink);
-        }
-
-        downloadLink.click();
-      }
-//    }
-  } else {
-    alert('Your browser does not support the HTML5 Blob.');
-  }
-
-}
-// end hackjob
-
 ActiveCode.prototype.createControls = function () {
     var ctrlDiv = document.createElement("div");
     $(ctrlDiv).addClass("ac_actions");
@@ -194,19 +154,16 @@ ActiveCode.prototype.createControls = function () {
     $(butt).click(this.runProg.bind(this));
     $(butt).attr("type","button")
 
-    // Save
-    var butt = document.createElement("button");
-    $(butt).text("Save");
-    $(butt).addClass("btn save-button");
-    ctrlDiv.appendChild(butt);
-    this.saveButton = butt;
-    $(butt).click(this.saveFile.bind(this, 'filename.txt')); // ->saveFile
-    //$(butt).click(this.runProg.bind(this)); // ->saveFile
-    //$(butt).click( function() {
-    //  console.log( $(this) );
-    //} ); // ->saveFile
-    $(butt).attr("type","button")
-    // end savebutton geberation
+    // Download
+    if (this.enabledownload) {
+      var butt = document.createElement("button");
+      $(butt).text("Download"); // or "Save"
+      $(butt).addClass("btn save-button");
+      ctrlDiv.appendChild(butt);
+      this.downloadButton = butt;
+      $(butt).click(this.downloadFile.bind(this, 'filename.txt')); // ->saveFile
+      $(butt).attr("type","button")
+    }
 
     if (! this.hidecode) {
         var butt = document.createElement("button");
@@ -220,7 +177,6 @@ ActiveCode.prototype.createControls = function () {
             this.addHistoryScrubber(true);
         }
     }
-
 
     if ($(this.origElem).data('gradebutton') && ! this.graderactive) {
         butt = document.createElement("button");
@@ -439,6 +395,38 @@ ActiveCode.prototype.disableSaveLoad = function() {
     $(this.saveButton).attr('title','Login to save your code');
     $(this.loadButton).addClass('disabled');
     $(this.loadButton).attr('title','Login to load your code');
+};
+
+ActiveCode.prototype.downloadFile = function (fn) {
+  var fnb = this.divid;
+  console.log( fnb );
+  var d = new Date();
+  var fileName = fnb + '_' + d.toJSON().substring(0,10).split('-').join('')+'.py';
+  var code = this.editor.getValue();
+  console.log( 'Saving as file: '+fileName+'\n'+code );
+
+  if ('Blob' in window) {
+//    var fileName = prompt('Please enter file name to save', 'Untitled.txt');
+//    if (fileName) {
+//      var textToWrite = document.getElementById('exampleTextarea').value.replace(/\n/g, '\r\n');
+      var textToWrite = code.replace(/\n/g, '\r\n');
+      console.log("ttw:"+'\n'+textToWrite);
+      var textFileAsBlob = new Blob([textToWrite], { type: 'text/plain' });
+
+      if ('msSaveOrOpenBlob' in navigator) {
+        navigator.msSaveOrOpenBlob(textFileAsBlob, fileName);
+      } else {
+        var downloadLink = document.createElement('a');
+        downloadLink.download = fileName;
+        downloadLink.innerHTML = 'Download File';
+        downloadLink.href = window.URL.createObjectURL(textFileAsBlob);
+        downloadLink.style.display = 'none';
+        document.body.appendChild(downloadLink);
+        downloadLink.click();
+      }
+  } else {
+    alert('Your browser does not support the HTML5 Blob.');
+  }
 };
 
 ActiveCode.prototype.addCaption = function() {
@@ -838,10 +826,6 @@ ActiveCode.prototype.manage_scrubber = function (scrubber_dfd, history_dfd, save
 
 
 ActiveCode.prototype.runProg = function () {
-  //
-    console.log( this.editor.getValue() );
-  //
-
     var prog = this.buildProg();
     var saveCode = "True";
     var scrubber_dfd, history_dfd, skulpt_run_dfd;
@@ -1582,8 +1566,8 @@ LiveCode.prototype.init = function(opts) {
 
     this.API_KEY = "67033pV7eUUvqo07OJDIV8UZ049aLEK1";
     this.USE_API_KEY = true;
-    this.JOBE_SERVER = 'http://jobe2.cosc.canterbury.ac.nz';
-    this.resource = '/jobe/index.php/restapi/runs/';
+    this.JOBE_SERVER = eBookConfig.host;
+    this.resource = '/runestone/proxy/jobeRun';
     this.div2id = {};
     if (this.stdin) {
         this.createInputElement();
@@ -1663,7 +1647,6 @@ LiveCode.prototype.runProg = function() {
         xhr.open("POST", host, true);
         xhr.setRequestHeader('Content-type', 'application/json; charset=utf-8');
         xhr.setRequestHeader('Accept', 'application/json');
-        xhr.setRequestHeader('X-API-KEY', this.API_KEY);
 
         xhr.onload = (function () {
             var logresult;
@@ -1713,10 +1696,10 @@ LiveCode.prototype.runProg = function() {
         ///$("#" + divid + "_errinfo").remove();
         $(this.output).html("Compiling and Running your Code Now...");
 
-        xhr.onerror = function () {
+        xhr.onerror = (function () {
             this.addJobeErrorMessage("Error communicating with the server.");
             $(this.runButton).removeAttr('disabled');
-        };
+        }).bind(this);
 
         xhr.send(data);
     };
@@ -1738,7 +1721,7 @@ LiveCode.prototype.pushDataFile = function (datadiv) {
         var contents = $(document.getElementById(datadiv)).text();
         var contentsb64 = btoa(contents);
         var data = JSON.stringify({ 'file_contents' : contentsb64 });
-        var resource = '/jobe/index.php/restapi/files/' + file_id;
+        var resource = '/runestone/proxy/jobePushFile/' + file_id;
         var host = this.JOBE_SERVER + resource;
         var xhr = new XMLHttpRequest();
 

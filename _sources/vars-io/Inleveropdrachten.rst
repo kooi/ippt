@@ -14,6 +14,7 @@ Sercan koopt een jas voor €100 exclusief BTW. Maak een programma dat eerst ber
    :caption: BTW
    :nocodelens:
    :language: python
+   :enabledownload:
 
    exclbtw = 100
    btwpercentage = 0.21 # btw-percentage is sinds 2012 21%
@@ -32,6 +33,7 @@ Schrijf een programma dat de voornaam van de gebruiker opvraagt met de functie i
    :caption: Naam
    :nocodelens:
    :language: python
+   :enabledownload:
 
 
 opg-vars-gemiddelde
@@ -43,6 +45,7 @@ Schrijf een programma dat de gebruiker vraagt om vijf getallen en schrijf daarna
    :caption: Gemiddelde
    :nocodelens:
    :language: python
+   :enabledownload:
 
 
 opg-vars-leeftijd
@@ -54,3 +57,4 @@ Schrijf een programma dat de gebruiker vraagt om het huidige jaartal en om het j
    :caption: Leeftijd
    :nocodelens:
    :language: python
+   :enabledownload:

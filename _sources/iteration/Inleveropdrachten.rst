@@ -12,6 +12,7 @@ Teken de onderstaande figuur (m.b.v. een *loop*).
    :caption: Ster
    :nocodelens:
    :language: python
+   :enabledownload:
 
    import turtle
    tina = turtle.Turtle()
@@ -29,6 +30,7 @@ Teken de onderstaande figuur (m.b.v. een *loop*).
    :caption: Hokjes
    :nocodelens:
    :language: python
+   :enabledownload:
 
    import turtle
    tina = turtle.Turtle()
@@ -46,6 +48,7 @@ Teken de onderstaande figuur (m.b.v. een *loop*).
    :caption: Zigzag
    :nocodelens:
    :language: python
+   :enabledownload:
 
    import turtle
    tina = turtle.Turtle()
@@ -63,6 +66,7 @@ Teken de onderstaande figuur (m.b.v. een *loop*).
    :caption: Kruizen
    :nocodelens:
    :language: python
+   :enabledownload:
 
    import turtle
    tina = turtle.Turtle()

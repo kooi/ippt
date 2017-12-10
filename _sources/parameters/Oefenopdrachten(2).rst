@@ -11,6 +11,7 @@ Breid de tekenhuis functie uit met een extra parameter waarmee je, naast de leng
    :caption: tekenhuis(lengte, kleur)
    :nocodelens:
    :language: python
+   :enabledownload:
 
    import turtle
    tina = turtle.Turtle()
@@ -53,6 +54,7 @@ Maak nu een functie genaamd rechthoek die twee parameters meekrijgt: *lengte* en
    :caption: tekenhuis(lengte, kleur)
    :nocodelens:
    :language: python
+   :enabledownload:
 
    import turtle
    tina = turtle.Turtle()
