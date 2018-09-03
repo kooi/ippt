@@ -11,6 +11,6 @@ Wij gaan leren tekenen met Python Turtle. Om hiermee te werken zullen we eerst e
 
    import turtle
    tina = turtle.Turtle()
-   tina.shape("turtle")
+   tina.shape("circle")
 
 We krijgen nu een scherm met een schildpad met de naam ``tina`` die we vervolgens opdrachten uit kunnen laten voeren.
