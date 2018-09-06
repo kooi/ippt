@@ -1,7 +1,7 @@
 Oefenopdrachten (2): Kleuren
 ::::::::::::::::::::::::::::
 
-Hieronder staan een aantal beginnetjes code en een voorbeeldfiguur. Pas de code telkens op zo'n manier aan dat de turtle de figuur tekent. De afmetingen staan in de figuur vermeld, die getallen hoef je er dus niet bij te zetten.
+Hieronder staan een aantal beginnetjes code en een voorbeeldfiguur. Pas de code telkens op zo'n manier aan dat de turtle de figuur tekent. 
 
 
 1. Gekleurde driehoek
@@ -25,12 +25,12 @@ Hieronder staan een aantal beginnetjes code en een voorbeeldfiguur. Pas de code 
    tina.left(120)
 
 
-2. Gekleurde driehoek
+2. Gekleurd parallellogram
 ---------------------
 
 .. image:: images/parallelogram-green.png
 
-.. activecode:: oefen-statements-parallelogramkleur
+.. activecode:: oefen-statements-parallellogramkleur
    :caption: Gekleurd parallelogram
    :nocodelens:
    :language: python
