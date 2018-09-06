@@ -1,7 +1,7 @@
 Oefenopdrachten (2): Kleuren
 ::::::::::::::::::::::::::::
 
-Hieronder staan een aantal beginnetjes code en een voorbeeldfiguur. Pas de code telkens op zo'n manier aan dat de turtle de figuur tekent. 
+Hieronder staan een aantal beginnetjes code en een voorbeeldfiguur. Pas de code telkens op zo'n manier aan dat de turtle de figuur tekent.
 
 
 1. Gekleurde driehoek
@@ -25,8 +25,8 @@ Hieronder staan een aantal beginnetjes code en een voorbeeldfiguur. Pas de code 
    tina.left(120)
 
 
-2. Gekleurd parallellogram
----------------------
+2. Gekleurd parallelogram
+-------------------------
 
 .. image:: images/parallelogram-green.png
 

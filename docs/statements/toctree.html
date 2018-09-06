@@ -26,7 +26,6 @@
     <link rel="stylesheet" href="../_static/modal-basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/clickable.css" type="text/css" />
     <link rel="stylesheet" href="../_static/poll.css" type="text/css" />
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootswatch/2.3.1/""/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="../_static/jquery-ui-1.10.3.custom.min.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
@@ -130,6 +129,7 @@
   eBookConfig.python3 = false;
   eBookConfig.basecourse = 'ippt';
   eBookConfig.runestone_version = '3.2.5';
+  eBookConfig.downloadsEnabled = true;
 </script>
 
 <!--
@@ -319,8 +319,46 @@
 
 
 <div class="container" id="continue-reading"></div>
-
 <div class="container" id="main-content">
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="breadcrumb">
+    
+      <li><a href="../index.html">Introductie Programmeren met Python Turtle</a></li>
+        
+      <li>1. Statements</li>
+    
+  </ul>
+
+</div>
+  
+      
+  <div class="ac_actions col-md-12" style="text-align:left;" role="navigation" aria-label="footer navigation">
+    
+    <a href="Inleiding.html" >
+      <div class="important" style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px; float: right; margin-right: 3px;">
+          <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%;"></i>
+      </div>
+    </a>
+    
+    
+    <a href="../index.html" >
+        <div class="important" style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">
+            <i class='prevNav glyphicon glyphicon-chevron-left' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%;"></i>
+        </div>
+    </a>
+    
+  </div>
+
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+
+</script>
+  
+
   
   <div class="section" id="statements">
 <h1>1. Statements<a class="headerlink" href="#statements" title="Permalink naar deze titel">¶</a></h1>
@@ -343,7 +381,7 @@
 <li class="toctree-l1"><a class="reference internal" href="Samenvatting(2).html">1.8. Samenvatting (2)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Oefenopdrachten(2).html">1.9. Oefenopdrachten (2): Kleuren</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="Oefenopdrachten(2).html#gekleurde-driehoek">1.9.1. 1. Gekleurde driehoek</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Oefenopdrachten(2).html#gekleurd-parallellogram">1.9.2. 2. Gekleurd parallellogram</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Oefenopdrachten(2).html#gekleurd-parallelogram">1.9.2. 2. Gekleurd parallelogram</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Oefenopdrachten(2).html#gekleurde-ruit">1.9.3. 3. Gekleurde ruit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Oefenopdrachten(2).html#gekleurd-hexagon">1.9.4. 4. Gekleurd hexagon</a></li>
 </ul>
@@ -359,29 +397,35 @@
 </div>
 
 
+  <p></p>
   
       
-  <li id="relations-prev" class="navLink" title='Previous Section - Inhoudsopgave' data-toggle="tooltip">
-    <a href="../index.html" >
-      <i class='prevNav glyphicon glyphicon-chevron-left'></i>
-    </a>
-  </li>
-  <a class="navLinkBg" id="navLinkBgLeft"  href="../index.html" ></a>
-  
-  <li id="relations-next" class="navLink" title='Next Section - 1.1. Inleiding' data-toggle="tooltip" >
+  <div class="ac_actions col-md-12" style="text-align:left;" role="navigation" aria-label="footer navigation">
+    
     <a href="Inleiding.html" >
-      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right'></i>
+      <div class="important" style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px; float: right; margin-right: 3px;">
+          <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%;"></i>
+      </div>
     </a>
-  </li>
-  <a class="navLinkBg navLink" id="navLinkBgRight" href="Inleiding.html" >Next Section - 1.1. Inleiding</a>
+    
+    
+    <a href="../index.html" >
+        <div class="important" style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">
+            <i class='prevNav glyphicon glyphicon-chevron-left' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%;"></i>
+        </div>
+    </a>
+    
+  </div>
+
 
 <script type="text/javascript">
 
   $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
   $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
-  
+
 </script>
   
+  <p></p>
 </div>
 <footer class="footer">
   <div class="container">
@@ -396,6 +440,18 @@
 </footer>
 
 
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32029811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
 
 
 

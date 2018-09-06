@@ -26,7 +26,6 @@
     <link rel="stylesheet" href="../_static/modal-basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/clickable.css" type="text/css" />
     <link rel="stylesheet" href="../_static/poll.css" type="text/css" />
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootswatch/2.3.1/""/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="../_static/jquery-ui-1.10.3.custom.min.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
@@ -130,6 +129,7 @@
   eBookConfig.python3 = false;
   eBookConfig.basecourse = 'ippt';
   eBookConfig.runestone_version = '3.2.5';
+  eBookConfig.downloadsEnabled = true;
 </script>
 
 <!--
@@ -319,8 +319,46 @@
 
 
 <div class="container" id="continue-reading"></div>
-
 <div class="container" id="main-content">
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="breadcrumb">
+    
+      <li><a href="../index.html">Introductie Programmeren met Python Turtle</a></li>
+        
+      <li>2. Iteration</li>
+    
+  </ul>
+
+</div>
+  
+      
+  <div class="ac_actions col-md-12" style="text-align:left;" role="navigation" aria-label="footer navigation">
+    
+    <a href="Herhaling(iteration).html" >
+      <div class="important" style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px; float: right; margin-right: 3px;">
+          <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%;"></i>
+      </div>
+    </a>
+    
+    
+    <a href="../statements/Inleveropdrachten.html" >
+        <div class="important" style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">
+            <i class='prevNav glyphicon glyphicon-chevron-left' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%;"></i>
+        </div>
+    </a>
+    
+  </div>
+
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+
+</script>
+  
+
   
   <div class="section" id="iteration">
 <h1>2. Iteration<a class="headerlink" href="#iteration" title="Permalink naar deze titel">¶</a></h1>
@@ -357,29 +395,35 @@
 </div>
 
 
+  <p></p>
   
       
-  <li id="relations-prev" class="navLink" title='Previous Section - 1.10. Inleveropdrachten' data-toggle="tooltip">
-    <a href="../statements/Inleveropdrachten.html" >
-      <i class='prevNav glyphicon glyphicon-chevron-left'></i>
-    </a>
-  </li>
-  <a class="navLinkBg" id="navLinkBgLeft"  href="../statements/Inleveropdrachten.html" ></a>
-  
-  <li id="relations-next" class="navLink" title='Next Section - 2.1. Herhaling (iteration)' data-toggle="tooltip" >
+  <div class="ac_actions col-md-12" style="text-align:left;" role="navigation" aria-label="footer navigation">
+    
     <a href="Herhaling(iteration).html" >
-      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right'></i>
+      <div class="important" style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px; float: right; margin-right: 3px;">
+          <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%;"></i>
+      </div>
     </a>
-  </li>
-  <a class="navLinkBg navLink" id="navLinkBgRight" href="Herhaling(iteration).html" >Next Section - 2.1. Herhaling (iteration)</a>
+    
+    
+    <a href="../statements/Inleveropdrachten.html" >
+        <div class="important" style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">
+            <i class='prevNav glyphicon glyphicon-chevron-left' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%;"></i>
+        </div>
+    </a>
+    
+  </div>
+
 
 <script type="text/javascript">
 
   $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
   $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
-  
+
 </script>
   
+  <p></p>
 </div>
 <footer class="footer">
   <div class="container">
@@ -394,6 +438,18 @@
 </footer>
 
 
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32029811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
 
 
 

@@ -26,7 +26,6 @@
     <link rel="stylesheet" href="_static/modal-basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/clickable.css" type="text/css" />
     <link rel="stylesheet" href="_static/poll.css" type="text/css" />
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootswatch/2.3.1/""/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="_static/jquery-ui-1.10.3.custom.min.css" type="text/css" />
     <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="_static/user-highlights.css" type="text/css" />
@@ -135,6 +134,7 @@
   eBookConfig.python3 = false;
   eBookConfig.basecourse = 'ippt';
   eBookConfig.runestone_version = '3.2.5';
+  eBookConfig.downloadsEnabled = true;
 </script>
 
 <!--
@@ -310,8 +310,29 @@
 
 
 <div class="container" id="continue-reading"></div>
-
 <div class="container" id="main-content">
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="breadcrumb">
+    
+      <li><a href="index.html">Introductie Programmeren met Python Turtle</a></li>
+        
+      <li>Zoeken</li>
+    
+  </ul>
+
+</div>
+  
+      
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+
+</script>
+  
+
   
   <h1 id="search-documentation">Zoeken</h1>
   <div id="fallback" class="admonition warning">
@@ -336,6 +357,7 @@
   
   </div>
 
+  <p></p>
   
       
 
@@ -343,9 +365,10 @@
 
   $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
   $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
-  
+
 </script>
   
+  <p></p>
 </div>
 <footer class="footer">
   <div class="container">
@@ -360,6 +383,18 @@
 </footer>
 
 
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32029811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
 
 
 
