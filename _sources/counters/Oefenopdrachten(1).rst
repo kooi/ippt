@@ -13,6 +13,7 @@ Schrijf een programma waarmee je het volgende figuurtje natekent. Je moet uitera
    :caption: Driehoeken
    :nocodelens:
    :language: python
+   :enabledownload:
 
    import turtle
    tina = turtle.Turtle()

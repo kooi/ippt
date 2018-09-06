@@ -12,6 +12,7 @@ Maak een functie ``envelop()`` die de parameter lengte moet meekrijgen. De aanro
    :caption: envelop()
    :nocodelens:
    :language: python
+   :enabledownload:
 
    import turtle
    tina = turtle.Turtle()

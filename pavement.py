@@ -34,7 +34,8 @@ options(
                        'use_services': 'false',
                        'python3': 'false',
                        'dburl': '',
-                       'basecourse': 'ippt'
+                       'basecourse': 'ippt',
+                       'downloads_enabled': 'true'
                         }
     )
 )
