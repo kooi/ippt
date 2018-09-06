@@ -1,7 +1,7 @@
 Draaien
 :::::::
 
-De ``turtle`` heeft altijd een bepaalde richting. En als hij beweegt, dan beweegt hij ook die richting op. Je kunt echter de richting veranderen door het commando ``right()`` of ``left`` in te geven. Je geeft dan tussen haakjes aan hoeveel *graden* je wilt draaien.
+De ``turtle`` heeft altijd een bepaalde richting. Als hij beweegt, dan beweegt hij ook die richting op. Je kunt echter de richting veranderen door het commando ``right()`` of ``left()`` te geven. Je geeft dan tussen haakjes aan hoeveel *graden* je wilt draaien.
 
 Als je ``tina.right(90)`` ingeeft, dan draait tina 90 graden naar rechts.
 
@@ -16,9 +16,9 @@ Als je ``tina.right(90)`` ingeeft, dan draait tina 90 graden naar rechts.
 
    tina.right(90)
 
-Als je dit verandert naar ``right(180)`` ingeeft, dan draait tina zich helemaal om. Je kunt zelfs meer dan 180 graden draaien. Voer maar eens ``right(270)`` in. En met ``right(360)`` draait tina een perfect rondje. Uiteindelijk verandert ze dus dan ook niet van richting.
+Als je dit verandert naar ``right(180)``, dan draait tina zich helemaal om. Je kunt zelfs meer dan 180 graden draaien. Voer maar eens ``right(270)`` in. En met ``right(360)`` draait tina een perfect rondje. Uiteindelijk verandert ze dan dus ook niet van richting.
 
-Als je naar rechts kan draaien, dan kun je uiteraard ook naar links draaien. Dat doe je met de functie ``left``.
+Als je naar rechts kan draaien, dan kun je uiteraard ook naar links draaien. Dat doe je met de functie ``left()``.
 
 .. activecode:: vb-statements-turnleft
    :caption: Links afslaan
