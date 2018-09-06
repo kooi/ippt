@@ -35,7 +35,7 @@ options(
                        'python3': 'false',
                        'dburl': '',
                        'basecourse': 'ippt',
-                       'downloads_enabled': 'true'
+                       'downloads_enabled': 'false'
                         }
     )
 )
