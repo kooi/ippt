@@ -1,7 +1,7 @@
 Rechte lijnen tekenen
 :::::::::::::::::::::
 
-Nu we een turtle hebben (met de naam ``tina``). Met de opdracht ``forward(100)``, gaat de turtle 100 stappen vooruit. Om aan te geven welke ``turtle`` het commando op moet volgen moeten we in dit geval zeggen ``tina.forward()``. (We hebben *nog* maar één turtle maar in de toekomst zouden we er natuurlijk wel meerdere kunnen hebben.)
+We hebben nu een turtle met de naam ``tina``. Met de opdracht ``forward(100)``, gaat de turtle 100 stappen vooruit. Om aan te geven welke ``turtle`` het commando op moet volgen moeten we in dit geval zeggen ``tina.forward()``. (We hebben *nog* maar één turtle maar in de toekomst zouden we er natuurlijk wel meerdere kunnen hebben.)
 
 .. activecode:: vb-statements-forward
    :caption: 100 stappen vooruit
