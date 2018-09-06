@@ -3,7 +3,7 @@ Programmeren
 
 Een eenvoudige definitie van programmeren is dat je de computer meerdere opdrachten geeft die hij achterelkaar dient uit te voeren.
 
-Hieronder een eerste programma dat je in Python kan uitvoeren:
+Hieronder een eerste programma dat je in Python kan uitvoeren, ga maar eens na of de code klopt bij wat je ziet:
 
 .. activecode:: vb-statements-prog
    :caption: Tina volgt een pad
