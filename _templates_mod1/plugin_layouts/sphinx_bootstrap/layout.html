@@ -227,7 +227,6 @@
   eBookConfig.python3 = {{ python3 }};
   eBookConfig.basecourse = '{{ basecourse }}';
   eBookConfig.runestone_version = '{{ runestone_version }}';
-  eBookConfig.downloadsEnabled = {{downloads_enabled}};
 </script>
 
 <!--
@@ -258,18 +257,12 @@
 {{ navBar() }}
 
 <div class="container" id="continue-reading"></div>
-<div class="container" id="main-content">
-{% include "breadcrumbs.html" %}
-  {% block nextprevious_top %}
-      {% include "subchapter.html" %}
-  {% endblock %}
 
+<div class="container" id="main-content">
   {% block body %}{% endblock %}
-  <p></p>
-  {% block nextprevious_bottom %}
+  {% block nextprevious %}
       {% include "subchapter.html" %}
   {% endblock %}
-  <p></p>
 </div>
 {%- endblock %}
 
@@ -305,7 +298,7 @@
 </footer>
 
 
-{% if appname == "runestone" %}
+{% if appname == "runestone_old" %}
 <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-32029811-1']);

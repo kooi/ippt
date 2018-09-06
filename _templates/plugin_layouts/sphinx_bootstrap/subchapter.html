@@ -1,24 +1,25 @@
-{%- if prev %}
-  <li id="relations-prev" class="navLink" title='Previous Section - {{ prev.title }}' data-toggle="tooltip">
-    <a href="{{ prev.link|e }}" >
-      <i class='prevNav glyphicon glyphicon-chevron-left'></i>
-    </a>
-  </li>
-  <a class="navLinkBg" id="navLinkBgLeft"  href="{{ prev.link|e }}" ></a>
-  {% endif %}
-
-{%- if next %}
-  <li id="relations-next" class="navLink" title='Next Section - {{ next.title }}' data-toggle="tooltip" >
+{% if (theme_prev_next_buttons_location == 'bottom' or theme_prev_next_buttons_location == 'both') and (next or prev) %}
+  <div class="ac_actions col-md-12" style="text-align:left;" role="navigation" aria-label="footer navigation">
+    {% if next %}
     <a href="{{ next.link|e }}" >
-      <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right'></i>
+      <div class="important" style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px; float: right; margin-right: 3px;">
+          <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%;"></i>
+      </div>
     </a>
-  </li>
-  <a class="navLinkBg navLink" id="navLinkBgRight" href="{{ next.link|e }}" >Next Section - {{ next.title }}</a>
-{%- endif %}
+    {% endif %}
+    {% if prev %}
+    <a href="{{ prev.link|e }}" >
+        <div class="important" style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">
+            <i class='prevNav glyphicon glyphicon-chevron-left' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%;"></i>
+        </div>
+    </a>
+    {% endif %}
+  </div>
+{% endif %}
 
 <script type="text/javascript">
 
   $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
   $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
-  
+
 </script>
