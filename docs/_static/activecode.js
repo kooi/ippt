@@ -813,20 +813,17 @@ ActiveCode.prototype.fileReader = function(divid) {
     if (elem == null && Sk.builtinFiles["files"][divid]) {
         return Sk.builtinFiles["files"][divid];
     } else {
-        // try remote file unless it ends with .js or .py -- otherwise we'll ask the server for all
-        // kinds of modules that we are trying to import
-        if ( ! (divid.endsWith('.js') || divid.endsWith('.py')) ) {
-            $.ajax({async: false,
-                    url: `/runestone/ajax/get_datafile?course_id=${eBookConfig.course}&acid=${divid}`,
-                    success: function(data) {
-                        result = JSON.parse(data).data;
-                        },
-                    error: function(err) {
-                        result = null;
-                        }})
-            if (result) {
-                return result
-            }
+        // try remote file
+        $.ajax({async: false,
+                url: `/runestone/ajax/get_datafile?course_id=${eBookConfig.course}&acid=${divid}`,
+                success: function(data) {
+                    result = JSON.parse(data).data;
+                    },
+                error: function(err) {
+                     result = null;
+                    }})
+        if (result) {
+            return result
         }
     }
     if (elem == null && result === null) {
@@ -869,37 +866,6 @@ ActiveCode.prototype.outputfun = function(text) {
     text = text.replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/\n/g, "<br/>");
         $(this.output).append(text);
     };
-
-ActiveCode.prototype.filewriter = function(bytes, name, pos) {
-    let filecomponent = document.getElementById(name);
-    if (! filecomponent) {
-        let container = document.createElement('div')
-        $(container).addClass('runestone')
-        let tab = document.createElement('div');
-        $(tab).addClass('datafile_caption');
-        tab.innerHTML = `Data file: <code>${name}</code>`;
-        filecomponent = document.createElement('textarea')
-        filecomponent.rows = 10;
-        filecomponent.cols = 50;
-        filecomponent.id = name;
-        $(filecomponent).css('margin-bottom','5px');
-        $(filecomponent).addClass('ac_output');
-        container.appendChild(tab);
-        container.appendChild(filecomponent);
-        this.outerDiv.appendChild(container)
-    } else {
-        if (pos == 0) {
-            $(filecomponent).val("")
-        }
-    }
-
-    let current = $(filecomponent).val()
-    current = current + bytes;
-    $(filecomponent).val(current);
-    $(filecomponent).css('display', 'block');
-
-    return current.length;
-}
 
 ActiveCode.prototype.buildProg = function() {
     // assemble code from prefix, suffix, and editor for running.
@@ -980,7 +946,6 @@ ActiveCode.prototype.runProg = function () {
     Sk.configure({
         output: this.outputfun.bind(this),
         read: this.fileReader,
-        filewriter: this.filewriter.bind(this),
         python3: this.python3,
         imageProxy: 'http://image.runestone.academy:8080/320x',
         inputfunTakesPrompt: true,

@@ -1,0 +1,13 @@
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="breadcrumb">
+    {% block breadcrumbs %}
+      <li><a href="{{ pathto(master_doc) }}">{{ project|e }}</a></li>
+        {% for doc in parents %}
+          <li><a href="{{ doc.link|e }}">{{ doc.title }}</a></li>
+        {% endfor %}
+      <li>{{ title }}</li>
+    {% endblock %}
+  </ul>
+
+</div>
