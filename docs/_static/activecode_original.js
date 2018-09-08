@@ -398,24 +398,6 @@ ActiveCode.prototype.addHistoryScrubber = function (pos_last) {
                 }
             }
         }.bind(this))
-        .error(function(){
-            console.log('Retrieving history from localStorage.');
-            history_timeout = 15*60*1000;
-            var ls_data = JSON.parse(localStorage.getItem(eBookConfig.course + '_' + data['acid']));
-            // if history data exists
-            if (ls_data) {
-                for (t in ls_data['timestamps']) {
-                    // only include non-duplicate data (prevents double "Original")
-                    // don't remove old data; can be retrieved if necessary?
-                    if ( this.timestamps.includes(ls_data['timestamps'][t]) == false ){
-                        if ( Date.now() - new Date(ls_data['timestamps'][t]) < history_timeout ) {
-                          this.timestamps.push( ls_data['timestamps'][t]=='Original' ? 'Original' : (new Date(ls_data['timestamps'][t])).toLocaleString() );
-                          this.history.push( ls_data['history'][t] );
-                        }
-                    }
-                }
-            }
-        }.bind(this))
             .always(helper); // For an explanation, please look at https://stackoverflow.com/questions/336859/var-functionname-function-vs-function-functionname
         }
     return deferred;
@@ -723,7 +705,7 @@ ActiveCode.prototype.addErrorMessage = function (err) {
         } else {
             if (this.pretextLines > 0) {
                 err.traceback[0].lineno = err.traceback[0].lineno - this.pretextLines + 1;
-            }
+            } 
         }
     }
     var errHead = $('<h3>').html('Error');
@@ -928,10 +910,6 @@ ActiveCode.prototype.manage_scrubber = function (scrubber_dfd, history_dfd, save
             saveCode = "True";
             this.history.push(this.editor.getValue());
             this.timestamps.push((new Date()).toLocaleString());
-            // save history to localStorage
-            localStorage.setItem(
-                eBookConfig.course + '_' + this.divid, JSON.stringify({timestamps: this.timestamps, history: this.history})
-            );
             $(this.historyScrubber).slider("option", "max", this.history.length - 1);
             $(this.historyScrubber).slider("option", "value", this.history.length - 1);
             this.slideit();
@@ -1364,7 +1342,7 @@ function AudioTour (divid, code, bnum, audio_text) {
     $(this.prev_audio).click((function () {
         this.prevAudio();
     }).bind(this));
-
+    
     // handle the click to pause or play the audio
     $(this.pause_audio).click((function () {
         this.pauseAndPlayAudio(divid);
@@ -1451,7 +1429,7 @@ AudioTour.prototype.tour = function (divid, audio_type, bcount) {
     }
     $(this.audio_code).html(str);
     this.len = this.aname.length; // set the number of audio file in the tour
-
+    
     this.currIndex = 0;
     this.playCurrIndexAudio();
 };
