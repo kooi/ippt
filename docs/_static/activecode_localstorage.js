@@ -400,20 +400,17 @@ ActiveCode.prototype.addHistoryScrubber = function (pos_last) {
         }.bind(this))
         .error(function(){
             console.log('Retrieving history from localStorage.');
-            history_timeout = 15*60*1000;
             var ls_data = JSON.parse(localStorage.getItem(eBookConfig.course + '_' + data['acid']));
             // if history data exists
             if (ls_data) {
                 for (t in ls_data['timestamps']) {
                     // only include non-duplicate data (prevents double "Original")
-                    // don't remove old data; can be retrieved if necessary?
                     if ( this.timestamps.includes(ls_data['timestamps'][t]) == false ){
-                        if ( Date.now() - new Date(ls_data['timestamps'][t]) < history_timeout ) {
-                          this.timestamps.push( ls_data['timestamps'][t]=='Original' ? 'Original' : (new Date(ls_data['timestamps'][t])).toLocaleString() );
-                          this.history.push( ls_data['history'][t] );
-                        }
+                        this.timestamps.push( ls_data['timestamps'][t]=='Original' ? 'Original' : (new Date(ls_data['timestamps'][t])).toLocaleString() );
+                        this.history.push( ls_data['history'][t] );
                     }
                 }
+                // remove old data?
             }
         }.bind(this))
             .always(helper); // For an explanation, please look at https://stackoverflow.com/questions/336859/var-functionname-function-vs-function-functionname

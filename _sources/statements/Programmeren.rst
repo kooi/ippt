@@ -1,5 +1,5 @@
 Programmeren
-::::::::::::
+:::::::::::::
 
 Een eenvoudige definitie van programmeren is dat je de computer meerdere opdrachten geeft die hij achterelkaar dient uit te voeren.
 
