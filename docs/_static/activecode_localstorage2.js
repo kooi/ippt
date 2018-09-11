@@ -179,20 +179,6 @@ ActiveCode.prototype.createControls = function () {
       $(butt).attr("type","button")
     }
 
-    // start gsheets-handin
-    if (this.gsheethandin) { // create some kind of flag..?
-      var butt = document.createElement("button");
-      $(butt).text("Inlveren");
-      $(butt).addClass("btn handin-button");
-      ctrlDiv.appendChild(butt);
-      this.downloadButton = butt;
-      $(butt).click(this.gsheetHandin.bind(this);
-        // make general?
-        // params: username (from cookie) / user_id (from cookie), assignment_id (populate), sourcecode (getBlob)
-      $(butt).attr("type","button")
-    }
-    // end gsheets-handin
-
     if (!this.hidecode && !this.hidehistory) {
         var butt = document.createElement("button");
         $(butt).text($.i18n("msg_activecode_load_history"));
@@ -529,37 +515,6 @@ ActiveCode.prototype.downloadFile = function (lang) {
     alert('Your browser does not support the HTML5 Blob.');
   }
 };
-
-// start gsheets-handin
-ActiveCode.prototype.gsheetHandin = function (lang) {
-  var fnb = this.divid;
-  var d = new Date();
-  var fileName = fnb + '_' + d.toJSON()
-                              .substring(0,10) // reverse date format
-                              .split('-')
-                              .join('') + '.' + languageExtensions[lang];
-  var code = this.editor.getValue();
-
-  if ('Blob' in window) {
-      var textToWrite = code.replace(/\n/g, '\r\n');
-      var textFileAsBlob = new Blob([textToWrite], { type: 'text/plain' });
-
-      if ('msSaveOrOpenBlob' in navigator) {
-        navigator.msSaveOrOpenBlob(textFileAsBlob, fileName);
-      } else {
-        var downloadLink = document.createElement('a');
-        downloadLink.download = fileName;
-        downloadLink.innerHTML = 'Download File';
-        downloadLink.href = window.URL.createObjectURL(textFileAsBlob);
-        downloadLink.style.display = 'none';
-        document.body.appendChild(downloadLink);
-        downloadLink.click();
-      }
-  } else {
-    alert('Your browser does not support the HTML5 Blob.');
-  }
-};
-// end gsheets-handin
 
 ActiveCode.prototype.addCaption = function() {
     //someElement.parentNode.insertBefore(newElement, someElement.nextSibling);
