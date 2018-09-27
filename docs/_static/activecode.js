@@ -180,13 +180,21 @@ ActiveCode.prototype.createControls = function () {
     }
 
     // start gsheets-handin
-    if (this.gsheethandin) { // create some kind of flag..?
+    //if (this.gsheethandin) { // create some kind of flag..?
+    if (true) {
       var butt = document.createElement("button");
-      $(butt).text("Inlveren");
+      $(butt).text("Handin");
       $(butt).addClass("btn handin-button");
       ctrlDiv.appendChild(butt);
       this.downloadButton = butt;
-      $(butt).click(this.gsheetHandin.bind(this);
+      // TODO: create prepopulated handin modal so missing information may be entered
+      // (moodle) user_name (editable if not in cookie)
+      // (moodle) user_id (editable if not in cookie)
+      // (ippt) assignment_code (static)
+      // (ippt) assignment_id (static)
+      // cancel-button
+      // inleveren-button -> done (succes) / retry (fail)
+      $(butt).click(this.gsheetHandin.bind(this));
         // make general?
         // params: username (from cookie) / user_id (from cookie), assignment_id (populate), sourcecode (getBlob)
       $(butt).attr("type","button")
@@ -531,33 +539,44 @@ ActiveCode.prototype.downloadFile = function (lang) {
 };
 
 // start gsheets-handin
-ActiveCode.prototype.gsheetHandin = function (lang) {
-  var fnb = this.divid;
-  var d = new Date();
-  var fileName = fnb + '_' + d.toJSON()
-                              .substring(0,10) // reverse date format
-                              .split('-')
-                              .join('') + '.' + languageExtensions[lang];
-  var code = this.editor.getValue();
+ActiveCode.prototype.gsheetHandin = function () {
+    // ideally:
+    // popup modal populated with known data, requesting more if required
+//    var url = 'https://script.google.com/macros/s/AKfycbyl3UvPv8QB3qpmVf0BKNU7-oAnASvi4WOWe_Q9l15Y/dev'; // dev
+    var url = 'https://script.google.com/macros/s/AKfycbwaXniLekTWsasc6_cApJai9FIx_0MdNyVG6rWhY_oOgkVh3RTn/exec' // live
 
-  if ('Blob' in window) {
-      var textToWrite = code.replace(/\n/g, '\r\n');
-      var textFileAsBlob = new Blob([textToWrite], { type: 'text/plain' });
+    var user_id_value = '623'; // get from cookie
+    var user_name_value = 'marktestleerling'; // get from cookie
+    var assignment_id_value = this.divid;
+    var assignment_code_value  = this.editor.getValue(); //this.editor.getValue().replace(/\n/g, '\r\n');
 
-      if ('msSaveOrOpenBlob' in navigator) {
-        navigator.msSaveOrOpenBlob(textFileAsBlob, fileName);
-      } else {
-        var downloadLink = document.createElement('a');
-        downloadLink.download = fileName;
-        downloadLink.innerHTML = 'Download File';
-        downloadLink.href = window.URL.createObjectURL(textFileAsBlob);
-        downloadLink.style.display = 'none';
-        document.body.appendChild(downloadLink);
-        downloadLink.click();
-      }
-  } else {
-    alert('Your browser does not support the HTML5 Blob.');
-  }
+//    console.log(assignment_code_value);
+//    var user_name_field = 'user_name';
+//    var user_id_field = 'user_id';
+//    var assignment_id_field = 'assignment_id';
+//    var assignment_code_field = 'assignment_code';
+
+    $.ajax({
+        url: url,
+        crossDomain: true,
+        data: { user_id: user_id_value,
+                user_name: user_name_value,
+                assignment_id: assignment_id_value,
+                assignment_code: assignment_code_value
+              },
+        type: "POST",
+        dataType: "jsonp",
+        success: function(data) {
+          console.log(data);
+          if (data.result == 'success') {
+            alert('Ingeleverd.');
+          } else {
+            alert('Er is iets fout gegaaan.\n\nFoutmelding:\n'+ JSON.stringify(data) + '\n\n Sla je code eerst voor de zekerheid op en probeer het nog een keer.' );
+          }
+        }
+    });
+
+
 };
 // end gsheets-handin
 
