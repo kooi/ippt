@@ -53,4 +53,4 @@ Nu zien we dus dat het idee werkt en kunnen we, zoals in het onderstaande progra
        tina.forward(50)  # patroon
        tina.left(90)     # oriëntatie
 
-Veel van de onderstaande opgaven kunnen met dezelfde aanpak opgelost worden. Denk eraan om eerst het repetitieve patroon te ontdekken. Schrijf dan een programma die dat patroon tekent. Denk vervolgens na over de heroriëntatie van de turtle zodat het patroon ook voor de tweede keer getekend kan worden. Schrijf dan een loop zodat je de hele tekening met een kort-en-krachtig programma kan gaan maken.
+Veel van de komende opgaven kunnen met dezelfde aanpak opgelost worden. Denk eraan om eerst het repetitieve patroon te ontdekken. Schrijf dan een programma die dat patroon tekent. Denk vervolgens na over de heroriëntatie van de turtle zodat het patroon ook voor de tweede keer getekend kan worden. Schrijf dan een loop zodat je de hele tekening met een kort-en-krachtig programma kan gaan maken.
