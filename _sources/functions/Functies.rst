@@ -101,21 +101,6 @@ Probeer maar eens het programma uit.
    tekenhuis()
 
 
-Nu met een include:
-
-.. activecode:: vb-functions-tekenhuis3
-   :caption: 2x tekenen met tekenhuis()
-   :nocodelens:
-   :language: python
-   :include: vb-functions-tekenhuis2
-
-   import turtle
-   tina = turtle.Turtle()
-   tina.shape("turtle")
-
-   tekenhuis()
-
-
 Let vooral op de laatste twee regels. Door de opdracht ``tekenhuis()`` twee keer te geven, worden er twee huizen getekend. De huizen worden nog wel op dezelfde plek getekend, waardoor je aan het eind maar één huis ziet. Dit kunnen we oplossen door na het eerste huisje de turtle te verplaatsen, zodat het tweede huisje ernaast wordt getekend. Je kunt tussen de twee ``tekenhuis()`` commando's dus bijvoorbeeld
 
 .. code-block:: python
