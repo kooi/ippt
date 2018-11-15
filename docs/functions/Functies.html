@@ -472,21 +472,6 @@ tekenhuis()
 tekenhuis()
 </textarea>
 </div>
-<p>Nu met een include:</p>
-
-<div data-childcomponent="vb-functions-tekenhuis3" class="runestone explainer ac_section alert alert-warning">
-
-<textarea data-component="activecode" id=vb-functions-tekenhuis3 data-lang="python" 
-     data-include="vb-functions-tekenhuis2" data-timelimit=25000    
-    data-audio=''   
-         data-caption='2x tekenen met tekenhuis()' >
-import turtle
-tina = turtle.Turtle()
-tina.shape("turtle")
-
-tekenhuis()
-</textarea>
-</div>
 <p>Let vooral op de laatste twee regels. Door de opdracht <code class="docutils literal notranslate"><span class="pre">tekenhuis()</span></code> twee keer te geven, worden er twee huizen getekend. De huizen worden nog wel op dezelfde plek getekend, waardoor je aan het eind maar één huis ziet. Dit kunnen we oplossen door na het eerste huisje de turtle te verplaatsen, zodat het tweede huisje ernaast wordt getekend. Je kunt tussen de twee <code class="docutils literal notranslate"><span class="pre">tekenhuis()</span></code> commando's dus bijvoorbeeld</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">tina</span><span class="o">.</span><span class="n">penup</span><span class="p">()</span>
 <span class="n">tina</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
