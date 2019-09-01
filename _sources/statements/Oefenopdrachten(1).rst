@@ -38,7 +38,7 @@ Hieronder staan een aantal beginnetjes code en een voorbeeldfiguur. Pas de code 
    tina = turtle.Turtle()
    tina.shape("turtle")
 
-   tina.forward(200)
+   tina.forward(100)
    tina.left(90)
 
 
@@ -57,8 +57,8 @@ Hieronder staan een aantal beginnetjes code en een voorbeeldfiguur. Pas de code 
    tina = turtle.Turtle()
    tina.shape("turtle")
 
-   tina.forward(200)
-   tina.left(90)
+   tina.backward(20)
+   tina.right(90)
 
 4. Grid
 ---------------
@@ -75,5 +75,5 @@ Hieronder staan een aantal beginnetjes code en een voorbeeldfiguur. Pas de code 
    tina = turtle.Turtle()
    tina.shape("turtle")
 
-   tina.forward(200)
+   tina.forward(100)
    tina.left(90)
