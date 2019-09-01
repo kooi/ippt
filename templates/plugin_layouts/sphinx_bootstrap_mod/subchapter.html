@@ -1,0 +1,25 @@
+{% if (theme_prev_next_buttons_location == 'bottom' or theme_prev_next_buttons_location == 'both') and (next or prev) %}
+  <div class="ac_actions col-md-12" style="text-align:left;" role="navigation" aria-label="footer navigation">
+    {% if next %}
+    <a href="{{ next.link|e }}" >
+      <div class="important" style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px; float: right; margin-right: 3px;">
+          <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%;"></i>
+      </div>
+    </a>
+    {% endif %}
+    {% if prev %}
+    <a href="{{ prev.link|e }}" >
+        <div class="important" style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">
+            <i class='prevNav glyphicon glyphicon-chevron-left' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%;"></i>
+        </div>
+    </a>
+    {% endif %}
+  </div>
+{% endif %}
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+
+</script>
