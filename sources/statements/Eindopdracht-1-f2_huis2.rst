@@ -1,56 +1,20 @@
 :orphan:
 
-Inleveropdrachten
-:::::::::::::::::
+Herkansing eindopdracht hoofdstuk 1
+:::::::::::::::::::::::::::::::::::
 
-opg-statements-trap
--------------------
+Eindopdracht
+------------
 
-Teken de onderstaande figuur. Dit kun je doen door uitsluitend gebruik te maken van ``forward()`` en ``right()``.
+Laat tina het onderstaande huis tekenen. De breedte van het huis is ``150`` en
+de gebruikte kleuren zijn ``yellow`` en ``brown``.
+Let erop dat je ``tina.begin_fill()`` en ``tina.end_fill()`` op de juiste
+momenten gebruikt zodat de figuur netjes opgevuld wordt.
 
-.. image:: images/trap.png
+.. image:: images/huis2.png
 
-.. activecode:: opg-statements-trap
-   :caption: Trap
-   :nocodelens:
-   :language: python
-   :enabledownload:
-
-   import turtle
-   tina = turtle.Turtle()
-   tina.shape("turtle")
-
-   tina.forward(0)
-   tina.right(0)
-
-
-opg-statements-balans
----------------------
-
-Teken de onderstaande figuur.
-
-.. image:: images/balans.png
-
-.. activecode:: opg-statements-balans
-   :caption: Balans
-   :nocodelens:
-   :language: python
-   :enabledownload:
-
-   import turtle
-   tina = turtle.Turtle()
-   tina.shape("turtle")
-
-
-opg-statements-huis
--------------------
-
-Teken nu een huis met de turtle. Je mag de grootte en de kleur zelf bepalen, onderstaande tekening is slechts een (saai) voorbeeld.
-
-.. image:: images/huis.png
-
-.. activecode:: opg-statements-huis
-   :caption: Balans
+.. activecode:: h1f2_huis
+   :caption: Huis
    :nocodelens:
    :language: python
    :enabledownload:
