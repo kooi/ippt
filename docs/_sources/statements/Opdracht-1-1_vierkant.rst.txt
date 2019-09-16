@@ -5,7 +5,7 @@ Hieronder staat een voorbeeldfiguur en een beginnetje van een programma. Pas de
 code aan zodat tina de figuur tekent. De getallen die in de figuur staan zijn
 afmetingen, deze hoef je uiteraard niet in jouw tekening erbij te zetten.
 
-Als een geheugensteuntje staat een samenvatting van de  programmeercodes die je
+Als een geheugensteuntje staat een samenvatting van de programmeercodes die je
 tot nu toe geleerd hebt hieronder.
 
 Als je klaar bent sla je je programma op door op ``download`` te drukken en dan

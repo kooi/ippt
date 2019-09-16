@@ -13,7 +13,7 @@ momenten gebruikt zodat de figuur netjes opgevuld wordt.
 
 .. image:: images/huis2.png
 
-.. activecode:: h1f2_huis
+.. activecode:: h1f2_huis2
    :caption: Huis
    :nocodelens:
    :language: python

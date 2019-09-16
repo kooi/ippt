@@ -2,15 +2,14 @@ Iteration
 :::::::::
 
 .. toctree::
-   :caption: Iteration
+   :caption: In dit hoofdstuk leer je gebruik te maken van herhaling (iteration).
    :maxdepth: 2
 
    Herhaling(iteration).rst
-   Samenvatting(1).rst
-   Oefenopdrachten(1).rst
+   Opdracht-2-1_inkorten.rst
+   Opdracht-2-2_vierkant.rst
    Patronen.rst
-   Oefenopdrachten(2).rst
+   Opdracht-2-3_trap.rst
    Loop-modus.rst
-   Samenvatting(2).rst
-   Oefenopdrachten(3).rst
-   Inleveropdrachten.rst
+   Opdracht-2-4_verticale-strepen.rst
+   Eindopdracht-2-f1_zigzag.rst

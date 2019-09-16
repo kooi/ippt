@@ -1,3 +1,5 @@
+:orphan:
+
 Inleveropdrachten
 :::::::::::::::::
 
@@ -67,7 +69,7 @@ Teken de onderstaande figuur (m.b.v. een *loop*).
    :nocodelens:
    :language: python
    :enabledownload:
- 
+
    import turtle
    tina = turtle.Turtle()
    tina.shape("turtle")

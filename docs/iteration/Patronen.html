@@ -119,8 +119,8 @@
     <link rel="shortcut icon" href="../_static/turtle_HrK_icon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="2.5. Oefenopdrachten (2): Patronen" href="Oefenopdrachten(2).html" />
-    <link rel="prev" title="2.3. Oefenopdrachten (1): Korter" href="Oefenopdrachten(1).html" />
+    <link rel="next" title="2.5. Opdracht 2-1: Trap" href="Opdracht-2-3_trap.html" />
+    <link rel="prev" title="2.3. Opdracht 2-2: Vierkant" href="Opdracht-2-2_vierkant.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -307,14 +307,14 @@
         
         
           
-  <li id="relations-prev" title="Previous Chapter - 2.3. Oefenopdrachten (1): Korter" data-toggle="tooltip">
-    <a href="Oefenopdrachten(1).html" >
+  <li id="relations-prev" title="Previous Chapter - 2.3. Opdracht 2-2: Vierkant" data-toggle="tooltip">
+    <a href="Opdracht-2-2_vierkant.html" >
       <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
     </a>
   </li>
   
-  <li id="relations-next" title='Next Chapter - 2.5. Oefenopdrachten (2): Patronen' data-toggle="tooltip" >
-    <a href="Oefenopdrachten(2).html" >
+  <li id="relations-next" title='Next Chapter - 2.5. Opdracht 2-1: Trap' data-toggle="tooltip" >
+    <a href="Opdracht-2-3_trap.html" >
       <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
     </a>
   </li>
@@ -359,14 +359,14 @@
       
   <div class="ac_actions col-md-12" style="text-align:left;" role="navigation" aria-label="footer navigation">
     
-    <a href="Oefenopdrachten(2).html" >
+    <a href="Opdracht-2-3_trap.html" >
       <div class="important" style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px; float: right; margin-right: 3px;">
           <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%;"></i>
       </div>
     </a>
     
     
-    <a href="Oefenopdrachten(1).html" >
+    <a href="Opdracht-2-2_vierkant.html" >
         <div class="important" style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">
             <i class='prevNav glyphicon glyphicon-chevron-left' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%;"></i>
         </div>
@@ -386,25 +386,34 @@
   
   <div class="section" id="patronen">
 <h1>2.4. Patronen<a class="headerlink" href="#patronen" title="Permalink to this headline">¶</a></h1>
-<p>We gaan nu verder met nog meer uitleg. We zijn geïnteresseerd om het volgende figuurtje te tekenen door gebruik te maken van een loop:</p>
+<p>We gaan nu verder met nog meer uitleg. We zijn geïnteresseerd om het volgende
+figuurtje te tekenen door gebruik te maken van een loop:</p>
 <img alt="../_images/patronen-1.png" src="../_images/patronen-1.png" />
-<p>Het eerste dat je doet is bepalen welk patroon steeds terugkeert. Dat moet je immers herhalen! Je zou bijvoorbeeld het volgende stukje als het te herhalen patroon kunnen aanmerken:</p>
+<p>Het eerste dat je doet is bepalen welk patroon steeds terugkeert. Dat moet je
+immers herhalen! Je zou bijvoorbeeld het volgende stukje als het te herhalen
+patroon kunnen aanmerken:</p>
 <img alt="../_images/patronen-2.png" src="../_images/patronen-2.png" />
-<p>Uitgaande van de situatie dat je naar boven kijkt, zou je dit gedeelte als volgt kunnen maken:</p>
+<p>Uitgaande van de situatie dat je naar boven kijkt, zou je dit gedeelte als
+volgt kunnen maken:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">tina</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
 <span class="n">tina</span><span class="o">.</span><span class="n">backward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
 <span class="n">tina</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
 <span class="n">tina</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Nadat we de bovenstaande regels hebben uitgevoerd kijkt de turtle naar rechts. Zie maar in het onderstaande plaatje:</p>
+<p>Nadat we de bovenstaande regels hebben uitgevoerd kijkt de turtle naar rechts.
+Zie maar in het onderstaande plaatje:</p>
 <img alt="../_images/patronen-3.png" src="../_images/patronen-3.png" />
-<p>Het enige dat we moeten doen is ervoor zorgen dat de turtle weer naar boven kijkt. Voor de rest moet je het patroon steeds herhalen, zodat je uiteindelijk het gewenste plaatje krijgt. De turtle naar boven laten kijken doen we uiteraard met de opdracht <code class="docutils literal notranslate"><span class="pre">left(90)</span></code>.</p>
+<p>Het enige dat we moeten doen is ervoor zorgen dat de turtle weer naar boven
+kijkt. Voor de rest moet je het patroon steeds herhalen, zodat je uiteindelijk
+het gewenste plaatje krijgt. De turtle naar boven laten kijken doen we
+uiteraard met de opdracht <code class="docutils literal notranslate"><span class="pre">left(90)</span></code>.</p>
 <p>We krijgen dan het volgende gewenste resultaat:</p>
 <img alt="../_images/patronen-4.png" src="../_images/patronen-4.png" />
 <p>Als we dezelfde code dan nog eens herhalen, dan krijgen we het volgende plaatje:</p>
 <img alt="../_images/patronen-5.png" src="../_images/patronen-5.png" />
-<p>Nu zien we dus dat het idee werkt en kunnen we, zoals in het onderstaande programma ook te zien is, het patroon 5 keer herhalen.</p>
+<p>Nu zien we dus dat het idee werkt en kunnen we, zoals in het onderstaande
+programma ook te zien is, het patroon 5 keer herhalen.</p>
 
 <div data-childcomponent="oefen-iteration-patronen" class="runestone explainer ac_section alert alert-warning">
 
@@ -426,7 +435,12 @@ for i in range(5):
     tina.left(90)     # oriëntatie
 </textarea>
 </div>
-<p>Veel van de komende opgaven kunnen met dezelfde aanpak opgelost worden. Denk eraan om eerst het repetitieve patroon te ontdekken. Schrijf dan een programma die dat patroon tekent. Denk vervolgens na over de heroriëntatie van de turtle zodat het patroon ook voor de tweede keer getekend kan worden. Schrijf dan een loop zodat je de hele tekening met een kort-en-krachtig programma kan gaan maken.</p>
+<p>Veel van de komende opgaven kunnen met dezelfde aanpak opgelost worden. Denk
+eraan om eerst het repetitieve patroon te ontdekken. Schrijf dan een programma
+die dat patroon tekent. Denk vervolgens na over de heroriëntatie van de turtle
+zodat het patroon ook voor de tweede keer getekend kan worden. Schrijf dan een
+loop zodat je de hele tekening met een kort-en-krachtig programma kan gaan
+maken.</p>
 </div>
 
 
@@ -435,14 +449,14 @@ for i in range(5):
       
   <div class="ac_actions col-md-12" style="text-align:left;" role="navigation" aria-label="footer navigation">
     
-    <a href="Oefenopdrachten(2).html" >
+    <a href="Opdracht-2-3_trap.html" >
       <div class="important" style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px; float: right; margin-right: 3px;">
           <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%;"></i>
       </div>
     </a>
     
     
-    <a href="Oefenopdrachten(1).html" >
+    <a href="Opdracht-2-2_vierkant.html" >
         <div class="important" style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">
             <i class='prevNav glyphicon glyphicon-chevron-left' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%;"></i>
         </div>
