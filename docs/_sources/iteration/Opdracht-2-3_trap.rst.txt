@@ -1,4 +1,4 @@
-Opdracht 2-1: Trap
+Opdracht 2-3: Trap
 ::::::::::::::::::
 
 Hieronder staat een voorbeeldfiguur en een beginnetje van een programma. Pas de
