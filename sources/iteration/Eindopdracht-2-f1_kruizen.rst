@@ -11,17 +11,16 @@ Voor deze opdracht krijg je een beoordeling (``o``, ``t`` of ``v``). Als je
 deze niet voldoende gemaakt hebt is er overigens wel de mogelijkheid een
 herkansingsopdracht te maken.
 
-
 Eindopdracht
 ------------
 
-Laat tina m.b.v. loops de onderstaande figuur tekenen. In het plaatje zijn nu 4
-hokjes te zien maar door het aanpassen van een (1) getal moeten dat er ook meer
-kunnen zijn.
+Laat tina m.b.v. loops de onderstaande figuur tekenen. In het plaatje zijn nu 7
+kruizen te zien maar door het aanpassen van een enkel getal moeten dat er ook
+meer kunnen zijn.
 
-.. image:: images/zigzag.png
+.. image:: images/kruizen.png
 
-.. activecode:: opg-iteration-zigzag
+.. activecode:: h2f1_kruizen
    :caption: Zigzag
    :nocodelens:
    :language: python

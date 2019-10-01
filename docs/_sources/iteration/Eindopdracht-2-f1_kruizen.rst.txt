@@ -1,5 +1,3 @@
-:orphan:
-
 Eindopdracht hoofdstuk 2
 ::::::::::::::::::::::::
 
@@ -22,7 +20,7 @@ meer kunnen zijn.
 
 .. image:: images/kruizen.png
 
-.. activecode:: h1f1_kruizen
+.. activecode:: h2f1_kruizen
    :caption: Zigzag
    :nocodelens:
    :language: python

@@ -44,6 +44,7 @@ Als we dezelfde code dan nog eens herhalen, dan krijgen we het volgende plaatje:
 Nu zien we dus dat het idee werkt en kunnen we, zoals in het onderstaande
 programma ook te zien is, het patroon 5 keer herhalen.
 
+
 .. activecode:: oefen-iteration-patronen
    :caption: Vierkant
    :nocodelens:
@@ -56,11 +57,11 @@ programma ook te zien is, het patroon 5 keer herhalen.
    tina.left(90)
 
    for i in range(5):
-       tina.forward(50)  # patroon
-       tina.backward(50) # patroon
-       tina.right(90)    # patroon
-       tina.forward(50)  # patroon
-       tina.left(90)     # oriëntatie
+       tina.forward(50)
+       tina.backward(50)
+       tina.right(90)
+       tina.forward(50)
+       tina.left(90)
 
 Veel van de komende opgaven kunnen met dezelfde aanpak opgelost worden. Denk
 eraan om eerst het repetitieve patroon te ontdekken. Schrijf dan een programma

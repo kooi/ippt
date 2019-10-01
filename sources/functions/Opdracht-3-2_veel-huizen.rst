@@ -1,13 +1,16 @@
-Oefenopdrachten (1)
-:::::::::::::::::::::::::::
+Opdracht 3-2: Veel huizen
+:::::::::::::::::::::::::
 
+Opdracht
+--------
 
-1. 5x tekenhuis()
------------------
+#. Gebruik de functie ``tekenhuis()`` en een loop om 5x een huis te tekenen.
+#. Pas de functie ``tekenhuis()`` op zo'n manier aan dat elk huis een rood
+   dak krijgt.
 
 Teken m.b.v. de functie ``tekenhuis()`` en een loop vijf huizen naast elkaar. Zorg er wel voor dat deze op het scherm passen.
 
-.. activecode:: oefen-functions-tekenhuis5
+.. activecode:: h3o2_veel-huizen
    :caption: 5x tekenen met tekenhuis()
    :nocodelens:
    :language: python
@@ -16,6 +19,7 @@ Teken m.b.v. de functie ``tekenhuis()`` en een loop vijf huizen naast elkaar. Zo
    import turtle
    tina = turtle.Turtle()
    tina.shape("turtle")
+   tina.speed(10)
 
    def tekenhuis():
        tina.left(90)
@@ -34,28 +38,3 @@ Teken m.b.v. de functie ``tekenhuis()`` en een loop vijf huizen naast elkaar. Zo
        tina.right(90)
        tina.forward(50)
        tina.right(180)
-
-
-
-2. Meer sterren
----------------
-
-Teken het onderstaande plaatje na. Maak gebruik van de onderstaande code.
-
-.. image:: images/sterren.png
-
-.. activecode:: oefen-functions-tekenster3
-   :caption: 3x een ster tekenen
-   :nocodelens:
-   :language: python
-   :enabledownload:
-
-   import turtle
-   tina = turtle.Turtle()
-   tina.shape("turtle")
-
-   def tekenster ():
-       for i in range(12):
-           tina.forward(50)
-           tina.backward(50)
-           tina.right(30)

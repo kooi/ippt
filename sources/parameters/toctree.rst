@@ -3,7 +3,7 @@ Functies met parameters
 
 .. toctree::
    :caption: Iteration
-   :maxdepth: 2
+   :maxdepth: 1
 
    FunctiesMetEenParameter.rst
    Oefenopdrachten(1).rst
