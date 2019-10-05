@@ -1,31 +1,19 @@
-Inleveropdrachten
-:::::::::::::::::
+Eindopdracht hoofdstuk 4
+::::::::::::::::::::::::
 
-opg-parameters-envelop
-----------------------
+Als afsluiting van het hoofdstuk is hieronder een eindopdracht. Deel 1 van deze
+opdracht is vergelijkbaar met vorige opdrachten -- je moet wederom een figuur
+natekenen met tina -- al zal dit nu iets meer werk zijn. Deel 2 van de opdracht
+voer je uit op moodle nadat je je code hebt ingeleverd. Je moet dan een paar
+vragen over je gemaakte programma invullen.
 
-Maak een functie ``envelop()`` die de parameter lengte moet meekrijgen. De aanroep ``envelop(50)`` zal dan het volgende plaatje tekenen:
-
-.. image:: images/envelop.png
-
-.. activecode:: opg-functions-enevelop
-   :caption: envelop()
-   :nocodelens:
-   :language: python
-   :enabledownload:
-
-   import turtle
-   tina = turtle.Turtle()
-   tina.shape("turtle")
-   tina.speed(10)
-
-   # definitie van de functie envelop() hier invullen
-
-   envelop(50)
+Voor deze opdracht krijg je een beoordeling (``o``, ``t`` of ``v``). Als je
+deze niet voldoende gemaakt hebt is er overigens wel de mogelijkheid een
+herkansingsopdracht te maken.
 
 
-opg-parameters-sneeuwvlok
--------------------------
+Eindopdracht
+------------
 
 Een sneeuwvlokje kun je maken door een paar parallellogrammen aan te plakken. Zie bijvoorbeeld:
 
@@ -37,7 +25,7 @@ In het eerste plaatje zijn er zes parallellogrammen naast elkaar getekend (de tu
 
 Maak eerst een functie ``sneeuwvlok`` die het linker plaatje tekent. De functie ``sneeuwvlok`` moet gebruik maken van de functie ``parallellogram`` die je van mij cadeau krijgt.
 
-.. activecode:: opg-functions-sneeuwvlok
+.. activecode:: h4f1_sneeuwvlok
    :caption: Nog meer huizen
    :nocodelens:
    :language: python

@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>4.4. Functies met meerdere parameters &#8212; Introductie Programmeren met Python Turtle 2.0 alpha documentation</title>
+    <title>4.3. Opdracht 4-2: Driehoek &#8212; Introductie Programmeren met Python Turtle 2.0 alpha documentation</title>
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -119,8 +119,8 @@
     <link rel="shortcut icon" href="../_static/turtle_HrK_icon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="4.5. Opdracht 4-3: Envelop" href="Opdracht-4-3_envelop.html" />
-    <link rel="prev" title="4.3. Opdracht 4-2: Driehoek" href="Opdracht-4-2_driehoek.html" />
+    <link rel="next" title="4.4. Functies met meerdere parameters" href="FunctiesMetMeerdereParameters.html" />
+    <link rel="prev" title="4.2. Opdracht 4-1: Vierkant" href="Opdracht-4-1_vierkant.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -283,7 +283,7 @@
             <li><a href='/runestone/static/overview/instructor.html'>Help for Instructors</a></li>
             <li class="divider"></li>
             <li><a href='http://runestoneinteractive.org'>About Runestone</a></li>
-            <li><a href='/runestone/default/reportabug?course=ippt&page=FunctiesMetMeerdereParameters'>Report A Problem</a></li>
+            <li><a href='/runestone/default/reportabug?course=ippt&page=Opdracht-4-2_driehoek'>Report A Problem</a></li>
           </ul>
         </li>
         //-->
@@ -299,7 +299,10 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">4.4. Functies met meerdere parameters</a></li>
+<li><a class="reference internal" href="#">4.3. Opdracht 4-2: Driehoek</a><ul>
+<li><a class="reference internal" href="#opdracht">4.3.1. Opdracht</a></li>
+</ul>
+</li>
 </ul>
 </ul>
 </li>
@@ -307,14 +310,14 @@
         
         
           
-  <li id="relations-prev" title="Previous Chapter - 4.3. Opdracht 4-2: Driehoek" data-toggle="tooltip">
-    <a href="Opdracht-4-2_driehoek.html" >
+  <li id="relations-prev" title="Previous Chapter - 4.2. Opdracht 4-1: Vierkant" data-toggle="tooltip">
+    <a href="Opdracht-4-1_vierkant.html" >
       <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
     </a>
   </li>
   
-  <li id="relations-next" title='Next Chapter - 4.5. Opdracht 4-3: Envelop' data-toggle="tooltip" >
-    <a href="Opdracht-4-3_envelop.html" >
+  <li id="relations-next" title='Next Chapter - 4.4. Functies met meerdere parameters' data-toggle="tooltip" >
+    <a href="FunctiesMetMeerdereParameters.html" >
       <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
     </a>
   </li>
@@ -350,7 +353,7 @@
         
           <li><a href="toctree.html">4. Functies met parameters</a></li>
         
-      <li>4.4. Functies met meerdere parameters</li>
+      <li>4.3. Opdracht 4-2: Driehoek</li>
     
   </ul>
 
@@ -359,14 +362,14 @@
       
   <div class="ac_actions col-md-12" style="text-align:left;" role="navigation" aria-label="footer navigation">
     
-    <a href="Opdracht-4-3_envelop.html" >
+    <a href="FunctiesMetMeerdereParameters.html" >
       <div class="important" style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px; float: right; margin-right: 3px;">
           <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%;"></i>
       </div>
     </a>
     
     
-    <a href="Opdracht-4-2_driehoek.html" >
+    <a href="Opdracht-4-1_vierkant.html" >
         <div class="important" style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">
             <i class='prevNav glyphicon glyphicon-chevron-left' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%;"></i>
         </div>
@@ -384,28 +387,44 @@
   
 
   
-  <div class="section" id="functies-met-meerdere-parameters">
-<h1>4.4. Functies met meerdere parameters<a class="headerlink" href="#functies-met-meerdere-parameters" title="Permalink to this headline">¶</a></h1>
-<p>Als je een functie maakt, waar je een getal (of iets anders) aan kan meegeven, dan noem je dat een functie met een parameter. Dus de functie tekenhuis hiervoor had een parameter genaamd <code class="docutils literal notranslate"><span class="pre">lengte</span></code>.
-Hoe kun je er nou voor zorgen dat jouw functie ook meer dan één parameter kan gebruiken? Het antwoord is vrij eenvoudig: door voor de tweede een andere naam te verzinnen en dat vervolgens te gebruiken.</p>
+  <div class="section" id="opdracht-4-2-driehoek">
+<h1>4.3. Opdracht 4-2: Driehoek<a class="headerlink" href="#opdracht-4-2-driehoek" title="Permalink to this headline">¶</a></h1>
+<p>Hieronder staat een voorbeeldfiguur en een beginnetje van een programma. Pas de
+code aan zodat tina de figuur tekent. De getallen die in de figuur staan zijn
+afmetingen, deze hoef je uiteraard niet in jouw tekening erbij te zetten.</p>
+<p>Als een geheugensteuntje staat een samenvatting van de programmeercodes die je
+tot nu toe geleerd hebt hieronder.</p>
+<p>Als je klaar bent sla je je programma op door op <code class="docutils literal notranslate"><span class="pre">download</span></code> te drukken en dan
+lever je dit bestand in via moodle.</p>
+<div class="section" id="opdracht">
+<h2>4.3.1. Opdracht<a class="headerlink" href="#opdracht" title="Permalink to this headline">¶</a></h2>
+<p>Maak een functie <code class="docutils literal notranslate"><span class="pre">driehoek()</span></code> die driehoeken van verschillende lengtes kan tekenen. Uiteindelijk moet je drie driehoeken tekenen. Één met zijden van 20 pixels, één met zijden van 40 pixels en één met zijden van 60 pixels. Het moet er als volgt uitzien:</p>
+<img alt="../_images/driehoeken.png" src="../_images/driehoeken.png" />
 
-<div data-childcomponent="vb-functions-kleurlijn" class="runestone explainer ac_section alert alert-warning">
+<div data-childcomponent="h4o2_driehoek" class="runestone explainer ac_section alert alert-warning">
 
-<textarea data-component="activecode" id=vb-functions-kleurlijn data-lang="python" 
-      data-timelimit=25000    
+<textarea data-component="activecode" id=h4o2_driehoek data-lang="python" 
+      data-timelimit=25000   data-enabledownload="true" 
     data-audio=''      
-         data-caption='Een gekleurde lijn' >
+         data-caption='``driehoek()``' >
 import turtle
 tina = turtle.Turtle()
 tina.shape("turtle")
+tina.speed(10)
 
-def kleurlijn(lengte, kleur):
-    tina.pencolor(kleur)
-    tina.forward(lengte)
+# zet hier de code voor de definitie van driehoek()
 
-kleurlijn(10, "red")
-kleurlijn(40, "green")
+driehoek(20)
+tina.penup()
+tina.forward(50)
+tina.pendown()
+driehoek(40)
+tina.penup()
+tina.forward(50)
+tina.pendown()
+driehoek(60)
 </textarea>
+</div>
 </div>
 </div>
 
@@ -415,14 +434,14 @@ kleurlijn(40, "green")
       
   <div class="ac_actions col-md-12" style="text-align:left;" role="navigation" aria-label="footer navigation">
     
-    <a href="Opdracht-4-3_envelop.html" >
+    <a href="FunctiesMetMeerdereParameters.html" >
       <div class="important" style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px; float: right; margin-right: 3px;">
           <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%;"></i>
       </div>
     </a>
     
     
-    <a href="Opdracht-4-2_driehoek.html" >
+    <a href="Opdracht-4-1_vierkant.html" >
         <div class="important" style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">
             <i class='prevNav glyphicon glyphicon-chevron-left' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%;"></i>
         </div>

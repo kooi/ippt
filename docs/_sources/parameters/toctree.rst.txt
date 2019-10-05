@@ -6,7 +6,8 @@ Functies met parameters
    :maxdepth: 1
 
    FunctiesMetEenParameter.rst
-   Oefenopdrachten(1).rst
+   Opdracht-4-1_vierkant.rst
+   Opdracht-4-2_driehoek.rst
    FunctiesMetMeerdereParameters.rst
-   Oefenopdrachten(2).rst
-   Inleveropdrachten.rst
+   Opdracht-4-3_envelop.rst
+   Eindopdracht-4-f1_sneeuwvlok.rst
