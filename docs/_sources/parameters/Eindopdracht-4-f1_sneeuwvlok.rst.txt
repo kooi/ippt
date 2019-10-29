@@ -29,6 +29,7 @@ Maak eerst een functie ``sneeuwvlok`` die het linker plaatje tekent. De functie 
    :caption: Nog meer huizen
    :nocodelens:
    :language: python
+   :enabledownload:
 
    import turtle
    tina = turtle.Turtle()
