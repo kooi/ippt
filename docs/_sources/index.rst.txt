@@ -11,3 +11,5 @@ Inhoudsopgave
    iteration/toctree.rst
    functions/toctree.rst
    parameters/toctree.rst
+
+   counters/toctree.rst
