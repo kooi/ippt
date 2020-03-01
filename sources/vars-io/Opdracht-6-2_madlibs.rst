@@ -1,4 +1,4 @@
-Opdracht 6-1: Madlibs
+Opdracht 6-2: Madlibs
 :::::::::::::::::::::
 
 Schrijf een programma dat de gebruiker vraagt om een zelfstandig naamwoord (bv.
